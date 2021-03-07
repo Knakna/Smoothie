@@ -31,18 +31,18 @@
             </nav>
 
 
-            <div class="header__logo logo">
-                <a class="logo__link" href="#">
-                    <img class="logo__img" src="assets/images/logo" alt="logo">
-                </a>
-            </div>
+
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="assets/images/logo" alt="logo">
+            </a>
+
 
 
             <div class="header__icons">
 
                 <!-- personal -->
 
-                <div class="personal">
+                <div class="header__personal personal">
                     <ul class="personal__list">
                         <li class="personal__item">
                             <a class="personal__link" href="#"><img src="" alt="search"></a>
@@ -62,13 +62,16 @@
                 <div class="header__social social">
                     <ul class="social__list">
                         <li class="social__item">
-                            <a class="social__link" href="#"><img src="" alt="facebook" target="_blank"></a>
+                            <a class="social__link" href="#"><img class="social__img" src="" alt="facebook"
+                                    target="_blank"></a>
                         </li>
                         <li>
-                            <a class="social__link" href="#"><img src="" alt="Pinterest" target="_blank"></a>
+                            <a class="social__link" href="#"><img class="social__img" src="" alt="Pinterest"
+                                    target="_blank"></a>
                         </li>
                         <li>
-                            <a class="social__link" href="#"><img src="" alt="instagram" target="_blank"></a>
+                            <a class="social__link" href="#"><img class="social__img" src="" alt="instagram"
+                                    target="_blank"></a>
                         </li>
                     </ul>
                 </div> <!-- /.social -->
@@ -91,7 +94,8 @@
 
         <h2 class="smoothies__title title">What are these smoothies?</h2>
 
-        <p class="smoothies__text text">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes
+        <p class="smoothies__text text text--black">A smoothie is a drink made from pureed raw fruit, vegetables, and
+            sometimes
             dairy
             products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using
             other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or
@@ -167,56 +171,36 @@
     <section class="products">
 
         <div class="products__items">
-            
+
             <div class="products__item products__item--chocolate">
-
-                <div class="products__wrap">
-                    <img class="products__img" src="" alt="chocolate">
-                    <h3 class="products__subtitle">Dark Chocolate Smoothie</h3>
-                    <span class="products__text">100 ml</span>
-                </div>
-
+                <img class="products__img" src="" alt="chocolate">
+                <h3 class="products__subtitle">Dark Chocolate Smoothie</h3>
+                <span class="products__text">100 ml</span>
                 <button class="products__btn btn btn--transparent">Buy</button>
-
             </div> <!-- /.products__item--chocolate-->
 
 
             <div class="products__item products__item--lettuce">
-
-                <div class="products__wrap">
-                    <img class="products__img" src="" alt="lettuce">
-                    <h3 class="products__subtitle">Vegan Lettuce Smoothie</h3>
-                    <span class="products__text">100 ml</span>
-                </div>
-
+                <img class="products__img" src="" alt="lettuce">
+                <h3 class="products__subtitle">Vegan Lettuce Smoothie</h3>
+                <span class="products__text">100 ml</span>
                 <button class="products__btn btn btn--transparent">Buy</button>
-
             </div> <!-- /.products__item--lettuce -->
 
 
             <div class="products__item products__item--lemon">
-
-                <div class="products__wrap">
-                    <img class="products__img" src="" alt="lemon">
-                    <h3 class="products__subtitle">Lemon Ginger Smoothie</h3>
-                    <span class="products__text">100 ml</span>
-                </div>
-
+                <img class="products__img" src="" alt="lemon">
+                <h3 class="products__subtitle">Lemon Ginger Smoothie</h3>
+                <span class="products__text">100 ml</span>
                 <button class="products__btn btn btn--transparent">Buy</button>
-
             </div> <!-- /.products__item--lemon -->
 
 
             <div class="products__item products__item--turmeric">
-
-                <div class="products__wrap">
-                    <img class="products__img" src="" alt="turmeric">
-                    <h3 class="products__subtitle">Turmeric Garlic Smoothie</h3>
-                    <span class="products__text">100 ml</span>
-                </div>
-
+                <img class="products__img" src="" alt="turmeric">
+                <h3 class="products__subtitle">Turmeric Garlic Smoothie</h3>
+                <span class="products__text">100 ml</span>
                 <button class="products__btn btn btn--transparent">Buy</button>
-
             </div> <!-- /.products__item--turmeric -->
 
         </div> <!-- /.products__items -->
@@ -231,7 +215,8 @@
 
         <div class="story__content">
             <h2 class="story__title title">Our story</h2>
-            <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include dietary
+            <p class="story__text text  text--black">As products typically using raw fruits or vegetables, smoothies
+                include dietary
                 fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar
                 to a milkshake. </p>
 
@@ -249,16 +234,18 @@
 
 
     <!-- testimonials -->
+
     <section class="testimonials">
 
-        <h2 class="testimonials__title title title--yellow">Why clients  <span class="testimonials__title--orange">LOVE</span> us?</h2>
+        <h2 class="testimonials__title title title--yellow">Why clients <span
+                class="testimonials__title--orange">LOVE</span> us?</h2>
 
         <div class="testimonials__content">
 
             <div class="testimonials__review">
                 <q class="testimonials__text text">Smoothie is great. I don't know what else to say. I will let my mum
                     know about this, she could really make use of Smoothie! Smoothie saved my business.</q>
-                <p class="testimonials__author text">- from Santa Monica, CA</p>
+                <cite class="testimonials__author text">- from Santa Monica, CA</cite>
             </div> <!-- /.testimonials__review -->
 
             <div class="testimonials__wrap-img">
@@ -279,27 +266,19 @@
 
     <section class="blog">
 
-        <h2 class="blog__title title">Our blog</h2>
+        <div class="blog__wrap">
+            <h2 class="blog__title title">Our blog</h2>
+            <img class="blog__img" src="" alt="picture">
+        </div>
 
         <article class="blog__artical">
 
-            <div class="blog__wrap-img">
-                <img class="blog__img" src="" alt="picture">
-            </div>
-
-            <div class="blog__preview">
-
-                <h3 class="blog__subtitle">ASAFOETIDA - THE NEXT TURMERIC?</h3>
-
-                <time class="blog__data" datetime="2020-06-16">Jun 16, 2020</time>
-
-                <p class="blog__text text">If the fruit ingredients and the green vegetable ingredients are both juiced
-                    ahead of time, the mixed juice
-                    doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
-                    <a class="blog__more text" href="#">Read More</a>
-                </p>
-
-            </div> <!-- /.blog__preview -->
+            <h3 class="blog__subtitle">ASAFOETIDA - THE NEXT TURMERIC?</h3>
+            <time class="blog__data" datetime="2020-06-16">Jun 16, 2020</time>
+            <p class="blog__text text text--black">If the fruit ingredients and the green vegetable ingredients are both
+                juiced ahead of time, the mixed juice doesn't even have to be blended like a smoothie, i.e. a green
+                juice or anything... <a class="blog__more text text--black" href="#">Read More</a>
+            </p>
 
         </article> <!-- /.blog__artical -->
 
@@ -312,29 +291,26 @@
 
     <section class="instagram">
 
-        <h2 class="instagram__title">ashasuperfoods</h2>
+        <a class="instagram__reference" href="#">
+            <h2 class="instagram__title">ashasuperfoods</h2>
+        </a>
 
         <div class="instagram__items">
-
-            <div class="instagram__item">
-                <img class="instagram__img" src="" alt="photo">
-            </div>
-
-            <div class="instagram__item">
-                <img class="instagram__img" src="" alt="photo">
-            </div>
-
-            <div class="instagram__item">
-                <img class="instagram__img" src="" alt="photo">
-            </div>
-
-            <div class="instagram__item">
-                <img class="instagram__img" src="" alt="photo">
-            </div>
-
-            <div class="instagram__item">
-                <img class="instagram__img" src="" alt="photo">
-            </div>
+            <a class="instagram__link" href="#">
+                <img class="instagram__img" src="./assets/images/" alt="photo">
+            </a>
+            <a class="instagram__link" href="#">
+                <img class="instagram__img" src="./assets/images/" alt="photo">
+            </a>
+            <a class="instagram__link" href="#">
+                <img class="instagram__img" src="./assets/images/" alt="photo">
+            </a>
+            <a class="instagram__link" href="#">
+                <img class="instagram__img" src="./assets/images/" alt="photo">
+            </a>
+            <a class="instagram__link" href="#">
+                <img class="instagram__img" src="./assets/images/" alt="photo">
+            </a>
 
         </div> <!-- /.instagram__items -->
 
@@ -350,17 +326,17 @@
         <div class="footer__top">
 
 
-            <div class="footer__logo logo">
-                <a class="logo__link" href="#">
-                    <img class="logo__img" src="assets/images/logo" alt="logo">
-                </a>
-            </div>
+
+            <a class="footer__logo logo" href="#">
+                <img class="logo__img" src="assets/images/logo" alt="logo">
+            </a>
+
 
             <div class="footer__information">
 
-                <h3 class="foorer__caption">Information</h3>
+                <h3 class="footer__caption">Information</h3>
 
-                <div class="footer__content">
+                <div class="footer__links">
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a class="footer__link" href="#">Search</a>
@@ -375,77 +351,29 @@
                             <a class="footer__link" href="#">Privacy Policy</a>
                         </li>
                     </ul>
-                </div> <!-- /.footer__content-->
+                </div> <!-- /.footer__links-->
 
             </div><!-- /.footer__information-->
 
 
             <div class="footer__payment">
 
-                <h3 class="foorer__caption">Payment</h3>
+                <h3 class="footer__caption">Payment</h3>
 
 
                 <!-- payment -->
 
-                <div class="payment">
+                <div class="footer__payment payment">
 
-                    <ul class="payment__list">
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="amex">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="apple pay">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="fpayment_link" href="#">
-                                <img class="payment__img" src="" alt="maestro">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="discover">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="jcb">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="mastercard">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="fpayment_link" href="#">
-                                <img class="payment__img" src="" alt="paypal">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment__link" href="#">
-                                <img class="payment__img" src="" alt="shopify pay">
-                            </a>
-                        </li>
-
-                        <li class="payment__item">
-                            <a class="payment_link" href="#">
-                                <img class="payment__img" src="" alt="visa">
-                            </a>
-                        </li>
-
-                    </ul> <!-- .paiment__list -->
+                    <img class="payment__img" src="" alt="amex">
+                    <img class="payment__img" src="" alt="apple pay">
+                    <img class="payment__img" src="" alt="maestro">
+                    <img class="payment__img" src="" alt="discover">
+                    <img class="payment__img" src="" alt="jcb">
+                    <img class="payment__img" src="" alt="mastercard">
+                    <img class="payment__img" src="" alt="paypal">
+                    <img class="payment__img" src="" alt="shopify pay">
+                    <img class="payment__img" src="" alt="visa">
 
                 </div> <!-- /.payment-->
 
@@ -454,27 +382,29 @@
 
             <div class="footer__subscription">
 
-                <h3 class="foorer__caption">Don’t miss out!</h3>
+                <h3 class="footer__caption">Don’t miss out!</h3>
 
                 <form class="footer__form" action="/" method="post">
                     <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter">
                     <button class="footer__button" type="submit">Follow Us</button>
-
                 </form>
 
 
                 <!-- social -->
 
-                <div class="footer__social social social--white">
+                <div class="footer__social social">
                     <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link" href="#"><img src="" alt="facebook" target="_blank"></a>
+                        <li class="social__item social__item--without-br">
+                            <a class="social__link" href="#"><img class="social__img social__img--white" src=""
+                                    alt="facebook" target="_blank"></a>
                         </li>
-                        <li>
-                            <a class="social__link" href="#"><img src="" alt="Pinterest" target="_blank"></a>
+                        <li class="social__item social__item--without-br">
+                            <a class="social__link" href="#"><img class="social__img social__img--white" src=""
+                                    alt="Pinterest" target="_blank"></a>
                         </li>
-                        <li>
-                            <a class="social__link" href="#"><img src="" alt="instagram" target="_blank"></a>
+                        <li class="social__item social__item--without-br">
+                            <a class="social__link" href="#"><img class="social__img social__img--white" src=""
+                                    alt="instagram" target="_blank"></a>
                         </li>
                     </ul>
                 </div> <!-- /.social -->
@@ -486,17 +416,19 @@
 
         <div class="footer__bottom">
 
-            <div class="footer__wrap-copy">
-                <small class="footer__copyright"> &#169; 2020. All Rights Reserved. </small>
+            <div class="footer__centre">
+                <span class="footer__copyright"> &#169; 2020. All Rights Reserved. </span>
             </div>
 
-            <div class="footer__wrap-up">
-                <a class="footer__link-up" href="#">
-                    Go top
-                </a>
-                <a class="footer__link-arrow-up" href="#" >
-                    <img class="footer__img-arrow" src="" alt="arrow">
-                </a>
+            <div class="footer__fixed">
+                <div class="footer__wrap-up">
+                    <a class="footer__link-up" href="#">
+                        Go top
+                    </a>
+                    <a class="footer__link-arrow-up" href="#">
+                        <img class="footer__img-arrow" src="" alt="arrow">
+                    </a>
+                </div>
             </div>
 
         </div> <!-- /.footer__bottom -->
