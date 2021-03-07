@@ -30,12 +30,15 @@
                 </ul>
             </nav>
 
-            <a class="logo" href="#">
-                <img class="logo__img" src="assets/images/logo" alt="logo">
-            </a>
+
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="assets/images/logo" alt="logo">
+                </a>
+            </div>
+
 
             <div class="header__icons">
-
 
                 <!-- personal -->
 
@@ -54,10 +57,9 @@
                     </ul>
                 </div> <!-- /.personal -->
 
-
                 <!-- social -->
 
-                <div class="social">
+                <div class="header__social social">
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social__link" href="#"><img src="" alt="facebook" target="_blank"></a>
@@ -76,7 +78,7 @@
         </div> <!-- /.header__top -->
 
         <div class="header__content">
-            <a class="header__btn btn" href="#">Shop now</a>
+            <a class="header__btn btn btn--green" href="#">Shop now</a>
         </div>
 
     </header> <!-- /.header  -->
@@ -111,16 +113,16 @@
                 <h3 class="smoothies__subtitle">Gluten-Free</h3>
             </div>
             <div class="smoothies__item"><img class="smoothies__img" src="" alt="Corn-Free">
-                <h5 class="smoothies__subtitle">Corn-Free</h5>
+                <h3 class="smoothies__subtitle">Corn-Free</h3>
             </div>
             <div class="smoothies__item"><img class="smoothies__img" src="" alt="Soy-Free">
-                <h5 class="smoothies__subtitle">Soy-Free</h5>
+                <h3 class="smoothies__subtitle">Soy-Free</h3>
             </div>
             <div class="smoothies__item"><img class="smoothies__img" src="" alt="Ayurvedic">
-                <h5 class="smoothies__subtitle">Ayurvedic</h5>
+                <h3 class="smoothies__subtitle">Ayurvedic</h3>
             </div>
             <div class="smoothies__item"><img class="smoothies__img" src="" alt="Made With Love">
-                <h5 class="smoothies__subtitle">Made With Love</h5>
+                <h3 class="smoothies__subtitle">Made With Love</h3>
             </div>
         </div> <!-- /.smoothies__items -->
 
@@ -138,7 +140,7 @@
 
         <div class="about__content">
 
-            <h2 class="about__title title">What makes Smoothie an <span class="about__title--yellow">awesome
+            <h2 class="about__title title">What makes Smoothie an <span class="about__title--green">awesome
                     drink?</span> </h2>
 
             <ul class="about__list">
@@ -152,7 +154,7 @@
                 <li class="about__item"> <span class="about__benefit"> Corn-Free & Soy-Free</span></li>
             </ul>
 
-            <a class="about__bth btn" href="#">About Organic Smoothie</a>
+            <a class="about__bth btn btn--transparent" href="#">About Organic Smoothie</a>
 
         </div> <!-- /.about__content -->
 
@@ -165,9 +167,8 @@
     <section class="products">
 
         <div class="products__items">
-
+            
             <div class="products__item products__item--chocolate">
-
 
                 <div class="products__wrap">
                     <img class="products__img" src="" alt="chocolate">
@@ -175,9 +176,9 @@
                     <span class="products__text">100 ml</span>
                 </div>
 
-                <button class="btn">Buy</button>
+                <button class="products__btn btn btn--transparent">Buy</button>
 
-            </div> <!-- /.products__item -->
+            </div> <!-- /.products__item--chocolate-->
 
 
             <div class="products__item products__item--lettuce">
@@ -188,9 +189,9 @@
                     <span class="products__text">100 ml</span>
                 </div>
 
-                <button class="btn">Buy</button>
+                <button class="products__btn btn btn--transparent">Buy</button>
 
-            </div> <!-- /.products__item -->
+            </div> <!-- /.products__item--lettuce -->
 
 
             <div class="products__item products__item--lemon">
@@ -201,9 +202,9 @@
                     <span class="products__text">100 ml</span>
                 </div>
 
-                <button class="btn">Buy</button>
+                <button class="products__btn btn btn--transparent">Buy</button>
 
-            </div> <!-- /.products__item -->
+            </div> <!-- /.products__item--lemon -->
 
 
             <div class="products__item products__item--turmeric">
@@ -214,9 +215,9 @@
                     <span class="products__text">100 ml</span>
                 </div>
 
-                <button class="btn">Buy</button>
+                <button class="products__btn btn btn--transparent">Buy</button>
 
-            </div> <!-- /.products__item -->
+            </div> <!-- /.products__item--turmeric -->
 
         </div> <!-- /.products__items -->
 
@@ -234,7 +235,7 @@
                 fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar
                 to a milkshake. </p>
 
-            <a class="story__btn btn" href="#"> Who we are</a>
+            <a class="story__btn btn btn--green" href="#"> Who we are</a>
 
         </div> <!-- /.story__content -->
 
@@ -250,21 +251,21 @@
     <!-- testimonials -->
     <section class="testimonials">
 
-        <h2 class="testimonials__title title">Why clients LOVE us?</h2>
+        <h2 class="testimonials__title title title--yellow">Why clients  <span class="testimonials__title--orange">LOVE</span> us?</h2>
 
-        <div class="testimonials__article">
+        <div class="testimonials__content">
 
             <div class="testimonials__review">
                 <q class="testimonials__text text">Smoothie is great. I don't know what else to say. I will let my mum
                     know about this, she could really make use of Smoothie! Smoothie saved my business.</q>
-                <p class="testimonials__author">- from Santa Monica, CA</p>
+                <p class="testimonials__author text">- from Santa Monica, CA</p>
             </div> <!-- /.testimonials__review -->
 
             <div class="testimonials__wrap-img">
                 <img class="testimonials__img" src="" alt="photo">
             </div>
 
-        </div> <!-- /.testimonials__article -->
+        </div> <!-- /.testimonials__content -->
 
         <div class="testimonials__buttons">
             <button class="testimonials__button"><img class="testimonials__link" src="" alt="arrow"></button>
@@ -295,7 +296,7 @@
                 <p class="blog__text text">If the fruit ingredients and the green vegetable ingredients are both juiced
                     ahead of time, the mixed juice
                     doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
-                    <a class="blog__more" href="#">Read More</a>
+                    <a class="blog__more text" href="#">Read More</a>
                 </p>
 
             </div> <!-- /.blog__preview -->
@@ -311,7 +312,7 @@
 
     <section class="instagram">
 
-        <h2 class="instagram__title title">ashasuperfoods</h2>
+        <h2 class="instagram__title">ashasuperfoods</h2>
 
         <div class="instagram__items">
 
@@ -335,7 +336,7 @@
                 <img class="instagram__img" src="" alt="photo">
             </div>
 
-        </div> <!-- /.instagram__items" -->
+        </div> <!-- /.instagram__items -->
 
     </section> <!-- /.instagram -->
 
@@ -348,9 +349,12 @@
 
         <div class="footer__top">
 
-            <a class="logo" href="#">
-                <img class="logo__img" src="assets/images/logo" alt="logo">
-            </a>
+
+            <div class="footer__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="assets/images/logo" alt="logo">
+                </a>
+            </div>
 
             <div class="footer__information">
 
@@ -454,14 +458,14 @@
 
                 <form class="footer__form" action="/" method="post">
                     <input class="footer__input" type="email" name="email" placeholder="Subscribe to our newsletter">
-                    <button class="footer__btn" type="submit">Follow Us</button>
+                    <button class="footer__button" type="submit">Follow Us</button>
 
                 </form>
 
 
                 <!-- social -->
 
-                <div class="social social--white">
+                <div class="footer__social social social--white">
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social__link" href="#"><img src="" alt="facebook" target="_blank"></a>
@@ -483,22 +487,21 @@
         <div class="footer__bottom">
 
             <div class="footer__wrap-copy">
-                <small class="footer__copyright">© 2020. All Rights Reserved. </small>
+                <small class="footer__copyright"> &#169; 2020. All Rights Reserved. </small>
             </div>
 
             <div class="footer__wrap-up">
-                <a class="footer__up" href="#">
+                <a class="footer__link-up" href="#">
                     Go top
                 </a>
-                <a href="#footer__wrap-arrow">
-                    <img class="footer__arrow" src="" alt="arrow">
+                <a class="footer__link-arrow-up" href="#" >
+                    <img class="footer__img-arrow" src="" alt="arrow">
                 </a>
             </div>
 
         </div> <!-- /.footer__bottom -->
 
     </footer> <!-- /.footer -->
-
 
 
 </body>
