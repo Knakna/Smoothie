@@ -1,3 +1,243 @@
 body {
-    font-family: "Muli", sans-serif;     
+    font-family: "Muli", sans-serif;
 }
+
+
+
+ul {
+    padding: 0;
+}
+
+/* 
+.logo {}
+
+.social {}
+
+.btn {}
+
+.title {}
+
+.text {} */
+
+/* =============header=========== */
+
+.visuallyhidden {
+    margin: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.header__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal__item {
+    list-style: none;
+}
+
+.personal__link {
+    text-decoration: none;
+}
+
+.social__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ==========smoothies============== */
+
+.smoothies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smoothies__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+/* =============about=========== */
+
+.about {
+    display: flex;
+
+}
+
+
+
+
+/* =============products=========== */
+
+.products__items {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============story=========== */
+
+.story {
+    display: flex;
+}
+
+.story__content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* =============testimonials=========== */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* =============blog=========== */
+.blog {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* =============instagram=========== */
+.instagram__items {
+    display: flex;
+
+
+}
+
+
+/* =============footer=========== */
+.footer {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .footer__information {
+
+} */
+
+.footer__payment {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.footer__bottom {
+    position: relative;
+
+}
+
+.footer__fixed {
+    
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+.footer__wrap-up {
+    display: flex;
+}
+
+/* .footer__link-up {
+    
+} */
+
+/* .footer__img-arrow {
+    
+} */
+
+
+
+
+
+
+/* =============header=========== */
+/* =============header=========== */
+/* =============header=========== */
+/* =============header=========== */
