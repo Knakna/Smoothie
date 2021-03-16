@@ -1,5 +1,8 @@
 body {
     font-family: "Muli", sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
 
 }
 
@@ -31,16 +34,23 @@ ul {
 }
 
 .header {
+    padding: 70px 100px 765px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+
+
+    background: url('../assets/images/bg-header.jpg') center center/cover no-repeat;
+    overflow: hidden;
 }
 
 .header__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 105px;
+    flex-wrap: wrap;
+
 }
 
 .header__list {
@@ -49,9 +59,33 @@ ul {
     list-style: none;
 }
 
-.header__link {
-    text-decoration: none;
+.header__item {
+    margin-right: 30px;
 }
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+.header__link {
+
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: bold;
+
+    line-height: 2.5;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+}
+
 
 .logo {
     text-decoration: none;
@@ -60,20 +94,78 @@ ul {
 .header__icons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+
 
 .personal__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 130px;
+}
+
+.social::before {
+    content: "";
+
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    top: 105px;
+    right: 270px;
+
+
+
+    z-index: 10;
+
+    background: #ffd68f;
+
+
 }
 
 .personal__item {
     list-style: none;
+    margin-right: 40px;
 }
+
+.personal__item:last-child {
+    margin-right: 0;
+}
+
+
 
 .personal__link {
     text-decoration: none;
+
 }
+
+.personal__item {
+    position: relative;
+}
+
+.personal__numeric {
+    width: 18px;
+    height: 18px;
+
+    font-size: 10px;
+    line-height: 2;
+    color: #000000;
+    text-align: center;
+
+    background: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: -5px;
+    top: -15px;
+
+
+
+}
+
+
 
 .social__list {
     list-style: none;
@@ -81,37 +173,126 @@ ul {
     justify-content: space-between;
 }
 
+.social__item {
+    margin-right: 10px;
 
-
-.header__content {
-    display: flex;
-    justify-content: center;
 }
 
+
 .social__link {
-    margin-bottom: 10px;
+
     width: 35px;
     height: 35px;
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    border: 1px solid #e8ecee;
 
-    
-   
+    border-radius: 50%;
+
+
+
+
 }
 
 .social__img {
     height: 18px;
+    width: 18px;
     font-weight: bold;
 
     fill: #434343;
 
 }
 
+/* .social1__img {
+    height: 26px;
+    width: 26px;
+} */
+
+
+
+.header__content {
+    align-self: center;
+}
+
+
+
+
+.btn {
+
+    display: inline-block;
+    padding: 20px;
+
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.05;
+    text-decoration: none;
+
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    background-color: transparent;
+
+    transition: background .2s linear;
+
+}
+
+.header__btn {
+    padding-right: 120px;
+    padding-left: 40px;
+
+    background-color: #0aa566;
+    border-radius: 35px;
+
+
+    font-size: 24px;
+    font-weight: 800;
+
+    line-height: 1.67;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+.header__btn::after {
+    content: url("../assets/images/Arrow.png");
+    position: absolute;
+    top: 20px;
+    right: 55px;
+
+}
+
+
+
 
 
 /* ==========smoothies============== */
+
+.title {
+    font-family: Muli;
+    font-size: 50px;
+    font-weight: 800;
+
+    line-height: 0.8;
+    letter-spacing: -1px;
+
+    color: #f7ae3b;
+
+}
+
+
+.text {
+    font-size: 18px;
+    line-height: 1.94;
+    color: #1e1e1e;
+}
+
+
+
+
 
 .smoothies {
     display: flex;
@@ -207,8 +388,8 @@ ul {
 /* =============footer=========== */
 .footer {
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer__top {
@@ -236,7 +417,7 @@ ul {
 }
 
 .footer__fixed {
-    
+
     position: absolute;
     top: 0;
     left: 300px;
