@@ -260,10 +260,17 @@ a {
 
 .smoothies {
     padding: 100px 0 170px;
+}
+
+.smoothies__wrap {
+    max-width: 1010px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
 }
 
 .title {
@@ -273,7 +280,6 @@ a {
     line-height: 0.8;
     letter-spacing: -1px;
     color: #f7ae3b;
-    text-align: center;
 }
 
 .smoothies__title {
@@ -292,19 +298,17 @@ a {
 
 .smoothies__text {
     margin-bottom: 60px;
-    padding: 0 10px;
-    max-width: 935px;
+    padding: 0 50px;
 }
 
 .smoothies__items {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1010px;
 }
 
 .smoothies__item {
     padding: 25px 0;
-    width: 25%;
+    flex-basis: 25%;
 
     text-align: center;
 }
@@ -822,7 +826,7 @@ a {
 .footer {
     display: flex;
     flex-direction: column;
-  
+
     background-color: #f6ab3b;
 }
 
@@ -852,16 +856,20 @@ a {
 }
 
 .footer__links {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
-.footer__link {    
+.footer__link {
     font-weight: bold;
     line-height: 1.94;
     letter-spacing: -0.36px;
     color: #6d450c;
 }
 
+
+
+
+/* 
 .footer__payment {
   max-width: 250px;
 }
@@ -876,10 +884,34 @@ margin-top: 25px;
     
 .payment__img:not(:last-of-type){
     margin-right: 15px;
+} */
+
+
+.payment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    max-width: 275px;
+    max-height: 150px;
+
+    margin-top: 30px;
 }
 
+.payment__img {
+    margin-bottom: 20px;
+
+}
+
+.payment__img:not(:last-of-type) {
+    margin-right: 20px;
+
+}
+
+
+
 .footer__form {
-    margin: 25px  0 0;
+    margin: 25px 0 0;
 
     position: relative;
 }
@@ -887,10 +919,10 @@ margin-top: 25px;
 .footer__form::after {
     position: absolute;
 
-    content: url("../assets/images/Arrow-form.png");    
+    content: url("../assets/images/Arrow-form.png");
     bottom: 5px;
-    left: 120px;  
-    z-index: 1;  
+    left: 120px;
+    z-index: 1;
 }
 
 .footer__input {
@@ -925,7 +957,7 @@ margin-top: 25px;
     margin-left: 325px;
 
     position: relative;
-    top: -35px;
+    top: -40px;
 }
 
 .social__img--white {
@@ -972,7 +1004,7 @@ margin-top: 25px;
     color: #fff;
 }
 
-.absolute__btn {  
+.absolute__btn {
     width: 50px;
     height: 50px;
 
@@ -990,7 +1022,7 @@ margin-top: 25px;
     position: absolute;
     top: 10px;
     right: 20px;
-    z-index: 1000;    
+    z-index: 1000;
 }
 
 
