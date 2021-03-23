@@ -29,10 +29,10 @@ a {
 }
 
 .container {
-    max-width: 1740px;
+    max-width: 1720px;
     width: 100%;
     align-self: flex-start;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin: 0 auto;
 }
 
@@ -58,18 +58,21 @@ a {
 }
 
 .header {
-    padding: 70px 0;
+    padding: 85px 0;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    z-index: 100;
 
     background: url('../assets/images/bg-header.jpg') center center/cover no-repeat;
     overflow: hidden;
 }
 
 .header__top {
-    margin-bottom: 100px;
+    margin-bottom: 115px;
 
     display: flex;
     justify-content: space-between;
@@ -106,12 +109,26 @@ a {
     line-height: 2.5;
     text-transform: uppercase;
     color: #fff;
+
+    transition: color .2s linear, border-bottom .2s linear;
+   
 }
 
-.logo {
-    padding-right: 140px;
 
-    text-decoration: none;
+.header__link:hover {
+    padding-bottom: 5px;
+    color: #ffd68f;
+    border-bottom: 2px solid #ffd68f;
+}
+
+
+.header__logo {
+    /* padding-right: 140px; */
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .header__icons {
@@ -125,8 +142,8 @@ a {
     width: 45px;
     height: 2px;
     position: absolute;
-    top: 105px;
-    right: 250px;
+    top: 102px;
+    right: 255px;
     z-index: 10;
 
     background: #ffd68f;
@@ -136,14 +153,32 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 120px;
+    margin-right: 135px;
+
 }
 
 .personal__item {
-    margin-right: 55px;
+    margin-right: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: relative;
+
+    transition:  background-color .2s linear;
+    
 }
+
+.personal__item:hover {
+   
+    background-color: #ffd68f;
+    border-radius: 50%;
+    border: none;
+
+}
+
+
 
 .personal__item:last-child {
     margin-right: 0;
@@ -193,6 +228,14 @@ a {
 
 .social__link--bg {
     background-color: #fff;
+
+    transition:  background-color .2s linear;
+
+}
+
+.social__link--bg:hover {
+    
+    background-color: #ffd68f;
 }
 
 .social__img {
@@ -207,6 +250,8 @@ a {
 }
 
 .btn {
+    padding: 15px 30px;
+
     display: block;
 
     position: relative;
@@ -247,11 +292,17 @@ a {
     background-color: #4cc796;
 }
 
+.header__btn:active {
+    background-color: #13925f;
+}
+
 .header__btn::after {
-    content: url("../assets/images/Arrow.png");
+    content: "";
+    /* content: url("../assets/images/Arrow.png"); */
     position: absolute;
     top: 20px;
     right: 35px;
+    background: url("../assets/images/Arrow.png") center no-repeat;
 }
 
 
@@ -442,7 +493,6 @@ a {
 .about__bth {
     width: 380px;
     min-height: 60px;
-    padding: 13px 39px 18px 29px;
 
     border-radius: 30px;
     border: solid 2px #f8b231;
@@ -526,7 +576,6 @@ a {
 
 .products__btn {
     margin: 0 auto;
-    padding: 15px 30px;
     width: 204px;
     height: 60px;
 
@@ -551,7 +600,7 @@ a {
 /* =============story=========== */
 
 .story {
-    padding: 120px 310px 160px;
+    padding: 120px 305px 160px;
 
     display: flex;
     justify-content: space-between;
@@ -581,7 +630,6 @@ a {
 .story__btn {
     width: 300px;
     height: 60px;
-    padding: 15px 0 20px 30px;
 }
 
 .story__btn::after {
@@ -632,6 +680,7 @@ a {
 
 .testimonials__title {
     margin-bottom: 130px;
+    text-align: center;
 }
 
 .testimonials__title--orange {
@@ -809,7 +858,7 @@ a {
 
     position: absolute;
     bottom: 23px;
-    right: 23px;
+    right: 10px;
 
     fill: #fff;
 }
@@ -839,6 +888,8 @@ a {
 }
 
 .footer__logo {
+    margin-bottom: 35px;
+
     align-self: center;
 }
 
@@ -852,12 +903,16 @@ a {
 }
 
 .footer__information {
+    margin-left: 150px;
+
     max-width: 190px;
 }
 
-.footer__links {
-    margin-top: 20px;
+.footer__list {
+    margin-top: 25px;
 }
+
+
 
 .footer__link {
     font-weight: bold;
@@ -887,6 +942,11 @@ margin-top: 25px;
 } */
 
 
+.footer__payment {
+    margin: 0 0 0 10px;
+
+}
+
 .payment {
     display: flex;
     flex-wrap: wrap;
@@ -896,6 +956,7 @@ margin-top: 25px;
     max-height: 150px;
 
     margin-top: 30px;
+
 }
 
 .payment__img {
@@ -1007,10 +1068,11 @@ margin-top: 25px;
 .absolute__btn {
     width: 50px;
     height: 50px;
+    padding: 0;
 
     position: fixed;
-    z-index: 1000;
-    right: 90px;
+    z-index: 10;
+    right: 80px;
     bottom: 40px;
 
     border-radius: 5px;
@@ -1022,7 +1084,7 @@ margin-top: 25px;
     position: absolute;
     top: 10px;
     right: 20px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 
