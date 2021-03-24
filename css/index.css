@@ -111,7 +111,7 @@ a {
     color: #fff;
 
     transition: color .2s linear, border-bottom .2s linear;
-   
+
 }
 
 
@@ -166,12 +166,12 @@ a {
 
     position: relative;
 
-    transition:  background-color .2s linear;
-    
+    transition: background-color .2s linear;
+
 }
 
 .personal__item:hover {
-   
+
     background-color: #ffd68f;
     border-radius: 50%;
     border: none;
@@ -229,12 +229,12 @@ a {
 .social__link--bg {
     background-color: #fff;
 
-    transition:  background-color .2s linear;
+    transition: background-color .2s linear;
 
 }
 
 .social__link--bg:hover {
-    
+
     background-color: #ffd68f;
 }
 
@@ -288,21 +288,27 @@ a {
     border-radius: 35px;
 }
 
-.header__btn:hover {
+.btn:focus {
+    box-shadow: 0 0 5px #6d450c;
+}
+
+.btn:hover {
     background-color: #4cc796;
 }
 
-.header__btn:active {
+.btn:active {
     background-color: #13925f;
 }
 
+
+
 .header__btn::after {
     content: "";
-    /* content: url("../assets/images/Arrow.png"); */
+    content: url("../assets/images/Arrow.png");
     position: absolute;
     top: 20px;
     right: 35px;
-    background: url("../assets/images/Arrow.png") center no-repeat;
+    /* background: url("../assets/images/Arrow.png") center no-repeat; */
 }
 
 
@@ -505,9 +511,10 @@ a {
     right: 35px;
 }
 
+/* 
 .about__bth:hover {
     background-color: #4cc796;
-}
+} */
 
 /* 
 .about {
@@ -583,9 +590,9 @@ a {
     text-align: left;
 }
 
-.products__btn:hover {
+/* .products__btn:hover {
     background-color: #4cc796;
-}
+} */
 
 .products__btn::after {
     content: url("../assets/images/Arrow-white.png");
@@ -639,9 +646,9 @@ a {
     right: 42px;
 }
 
-.story__btn:hover {
+/* .story__btn:hover {
     background-color: #4cc796;
-}
+} */
 
 .story__wrap-img {
     position: relative;
@@ -734,14 +741,19 @@ a {
 .testimonials__button {
     background-color: transparent;
     border: none;
+    outline-color: #ffd68f;
     cursor: pointer;
+    transition: background-color .2s linear;
 }
+
 
 
 .testimonials__button:first-child {
     transform: rotate(180deg);
     margin-right: 80px;
+
 }
+
 
 
 
@@ -824,6 +836,9 @@ a {
     justify-content: center;
     align-items: center;
     color: #0aa566;
+    transition: color .2s linear;
+
+
 }
 
 .instagram__icon {
@@ -832,6 +847,14 @@ a {
     margin-right: 12px;
 
     fill: #0aa566;
+
+    transition: fill .2s linear;
+}
+
+.instagram__reference:hover {
+
+    color: #4cc796;
+
 }
 
 .instagram__title {
@@ -861,6 +884,14 @@ a {
     right: 10px;
 
     fill: #fff;
+
+    transition: fill .2s linear;
+
+}
+
+.instagram__icon--white:hover {
+    fill: #4cc796;
+
 }
 
 .instagram__img {
@@ -919,6 +950,11 @@ a {
     line-height: 1.94;
     letter-spacing: -0.36px;
     color: #6d450c;
+}
+
+.footer__link:hover {
+
+    color: #fff;
 }
 
 
@@ -981,13 +1017,13 @@ margin-top: 25px;
     position: absolute;
 
     content: url("../assets/images/Arrow-form.png");
-    bottom: 5px;
+    bottom: 20px;
     left: 120px;
     z-index: 1;
 }
 
 .footer__input {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     width: 495px;
     height: 60px;
@@ -996,8 +1032,14 @@ margin-top: 25px;
     background-color: #fff;
 
     border: none;
+    outline: none;
 
     background: #fff url("../assets/images/bg-form.png") 20px 20px no-repeat;
+}
+
+.footer__input:focus {
+    /* border: 1px solid #6d450c; */
+    box-shadow: 0 0 10px #6d450c;
 }
 
 .footer__btn {
@@ -1013,17 +1055,40 @@ margin-top: 25px;
     font-size: 18px;
 }
 
+.footer__btn:focus {
+    /* border: 1px solid #6d450c; */
+    box-shadow: 0 0 5px #6d450c;
+}
+
+.footer__btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+
 .footer__social {
     max-width: 120px;
     margin-left: 325px;
 
     position: relative;
-    top: -40px;
+    top: -55px;
+}
+
+.social__item:focus {
+    box-shadow: 0 0 5px #6d450c;
+}
+
+.social__img--white:hover {
+    fill: #6c2c1c;
 }
 
 .social__img--white {
     fill: #fff;
 }
+
+
 
 .footer__bottom {
     padding: 15px 0;
