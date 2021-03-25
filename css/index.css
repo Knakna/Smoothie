@@ -255,21 +255,6 @@ a {
     transition: background-color .2s linear;
 }
 
-.btn--green {
-    background-color: #0aa566;
-}
-
-.header__btn {
-    width: 280px;
-    padding: 22px 40px;
-
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: capitalize;
-
-    border-radius: 35px;
-}
-
 .btn:focus {
     box-shadow: 0 0 5px #6d450c;
 }
@@ -282,17 +267,44 @@ a {
     background-color: #13925f;
 }
 
+.btn--green {
+    background-color: #0aa566;
+}
 
-
-.header__btn::after {
+.btn::after {  
     content: "";
+    width: 30px;
+    height: 16px;
+
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    z-index: 1;
+
+    transform: translateY(-50%);
+    background: url(../assets/images/Arrow.png) center no-repeat;    
+}
+
+
+
+
+.header__btn {
+    width: 280px;
+    padding: 22px 40px;
+
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+
+    border-radius: 35px;
+}
+
+/* .header__btn::after {
     content: url("../assets/images/Arrow.png");
     position: absolute;
     top: 20px;
     right: 35px;
-    /* background: url("../assets/images/Arrow.png") center no-repeat; */
-}
-
+} */
 
 
 /* ==========smoothies============== */
@@ -484,12 +496,12 @@ a {
     border: solid 2px #f8b231;
 }
 
-.about__bth::after {
+/* .about__bth::after {
     content: url("../assets/images/Arrow.png");
     position: absolute;
     top: 15px;
     right: 35px;
-}
+} */
 
 
 /* =============products=========== */
@@ -554,11 +566,15 @@ a {
     text-align: left;
 }
 
-.products__btn::after {
+/* .products__btn::after {
     content: url("../assets/images/Arrow-white.png");
     position: absolute;
     top: 20px;
     right: 35px;
+} */
+
+.products__btn::after {      
+    background: url(../assets/images/Arrow-white.png) center no-repeat;    
 }
 
 
@@ -596,13 +612,6 @@ a {
 .story__btn {
     width: 300px;
     height: 60px;
-}
-
-.story__btn::after {
-    content: url("../assets/images/Arrow.png");
-    position: absolute;
-    top: 15px;
-    right: 42px;
 }
 
 .story__wrap-img {
@@ -709,8 +718,6 @@ a {
     transform: rotate(180deg);
     margin-right: 80px;
 }
-
-
 
 
 
@@ -907,8 +914,6 @@ a {
     margin-top: 25px;
 }
 
-
-
 .footer__link {
     font-weight: bold;
     line-height: 1.94;
@@ -1023,6 +1028,10 @@ margin-top: 25px;
     color: #fff;
 }
 
+.footer__btn::after {  
+    content: none;     
+}
+
 .footer__social {
     max-width: 120px;
     margin-left: 325px;
@@ -1096,7 +1105,7 @@ margin-top: 25px;
     border-radius: 5px;
     background-color: #f2662f;
 }
-
+/* 
 .up__btn::after {
     content: url("../assets/images/arrow-sm-white.png");
     position: absolute;
@@ -1104,8 +1113,19 @@ margin-top: 25px;
     right: 50%;
     transform: translateX(50%);
     z-index: 10;
-}
+} */
 
+.up__btn::after {      
+    width: 13px;
+    height: 25px;
+   
+    right: 50%;
+    transform: translate3d(50%, -50%, 0);
+
+    z-index: 10;    
+
+    background: url(../assets/images/arrow-sm-white.png) center no-repeat;
+}
 
 
 /* 
