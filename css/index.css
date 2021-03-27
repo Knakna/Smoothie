@@ -803,6 +803,9 @@ a {
 
 .instagram {
     padding: 200px 0 5px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .instagram__reference {
@@ -810,10 +813,8 @@ a {
     padding-bottom: 38px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
     color: #0aa566;
-    transition: color .2s linear;
 }
 
 .instagram__icon {
@@ -826,15 +827,22 @@ a {
     transition: fill .2s linear;
 }
 
-.instagram__reference:hover {
+.instagram__reference:hover .instagram__title {
     color: #4cc796;
 }
+
+.instagram__reference:hover .instagram__icon {
+    fill: #4cc796;
+}
+
 
 .instagram__title {
     font-size: 24px;
     font-weight: 800;
     line-height: 1.67;
     letter-spacing: -0.48px;
+
+    transition: color .2s linear;
 }
 
 .instagram__items {
@@ -848,6 +856,11 @@ a {
     position: relative;
 }
 
+.instagram__link:hover .instagram__icon--white {
+    fill: #4cc796;
+}
+
+
 .instagram__icon--white {
     height: 26px;
     width: 26px;
@@ -859,10 +872,6 @@ a {
     fill: #fff;
 
     transition: fill .2s linear;
-}
-
-.instagram__icon--white:hover {
-    fill: #4cc796;
 }
 
 .instagram__img {
@@ -886,7 +895,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 65px 0 75px;
+    padding: 65px 0;
 }
 
 .footer__logo {
@@ -1099,7 +1108,7 @@ margin-top: 25px;
 
     position: fixed;
     z-index: 10;
-    right: 80px;
+    right: 92px;
     bottom: 40px;
 
     border-radius: 5px;
