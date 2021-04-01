@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="svgxuse.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Smoothie</title>
 </head>
 
@@ -24,36 +25,35 @@
     <header class="header">
         <div class="header__top container">
 
-            <div class="header__inner">
+            <button class="burger">
+                <span class="burger__line"> </span>
+                <!-- <span class="burger__line--close"> </span> -->
+            </button>
+            
 
             <nav class="header__nav">
-                <ul class="header__list">
 
+                <ul class="header__list">
                     <li class="header__item">
                         <a class="header__link" href="#">Home</a>
                     </li>
-
                     <li class="header__item">
                         <a class="header__link" href="#">Shop</a>
                     </li>
-
                     <li class="header__item">
                         <a class="header__link" href="#">Story</a>
                     </li>
-
                     <li class="header__item">
                         <a class="header__link" href="#">About</a>
                     </li>
-
                     <li class="header__item">
                         <a class="header__link" href="#">Blog</a>
                     </li>
-
                     <li class="header__item">
                         <a class="header__link" href="#">Testimonials</a>
                     </li>
-
                 </ul>
+
             </nav>
 
             <div class="header__logo logo" href="#">
@@ -116,9 +116,10 @@
 
             </div> <!-- /.header__icons -->
 
-        </div>
+
 
         </div> <!-- /.header__top -->
+
 
         <div class="header__content">
             <a class="header__btn btn btn--green" href="#">Shop now</a>
@@ -360,7 +361,7 @@
             <a class="instagram__link" href="#" target="_blank">
                 <img class="instagram__img" src="./assets/images/insta/1.jpg" alt="photo">
                 <svg class="instagram__icon instagram__icon--white">
-                    <use xlink:href="/sprite.svg#instagram"> </use> 
+                    <use xlink:href="/sprite.svg#instagram"> </use>
                 </svg>
             </a>
 
@@ -397,7 +398,7 @@
     </section> <!-- /.instagram -->
 
 
-    
+
     <!-- footer -->
 
     <footer class="footer">
@@ -537,7 +538,14 @@
 
     <!-- <div class="del"></div> -->
 
-
+<script>
+   $(document).ready(function () {
+    $(".burger").click(function (e) {
+        $(".burger__line,.header__nav").toggleClass('active');
+        $("body").toggleClass('lock');
+    })
+});
+</script>
 </body>
 
 </html>
