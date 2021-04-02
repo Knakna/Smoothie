@@ -1,5 +1,8 @@
  <!-- sprite -->
- <svg style="display: none;">
+
+
+
+ <svg xmlns="http://www.w3.org/2000/svg">
     <symbol id="facebook" viewBox="0 0 470.513 470.513">
         <g>
             <path

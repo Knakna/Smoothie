@@ -36,17 +36,6 @@ a {
     margin: 0 auto;
 }
 
-/* 
-.logo {}
-
-.social {}
-
-.btn {}
-
-.title {}
-
-.text {} */
-
 /* =============header=========== */
 
 .visuallyhidden {
@@ -75,11 +64,12 @@ a {
 
 /* +++++++++++burger============== */
 
-
-
 .burger {
     display: none;
     position: fixed;
+
+    width: 60px;
+    height: 35px;
 
     padding: 0;
 
@@ -106,7 +96,7 @@ a {
     height: 3px;
 
     border-radius: 1px;
-    background-color: #fff;
+    background-color: #000;
 
     border: 0;
     transition: all .2s linear;
@@ -140,7 +130,9 @@ a {
     position: relative;
 
     padding: 0;
-    background-color: transparent;
+
+    height: 0;
+
     border: 0;
     transition: all .2s linear;
     z-index: 25;
@@ -160,6 +152,7 @@ a {
     border-radius: 1px;
     background-color: #fff;
     z-index: 6;
+    opacity: 1;
 }
 
 .burger:hover .burger__line.active::before,
@@ -169,16 +162,15 @@ a {
 
 
 .burger__line.active::before {
-
     transform: rotate(45deg);
-
 }
 
 .burger__line.active::after {
-
     transform: rotate(-45deg);
-
 }
+
+
+
 
 
 .header__top {
@@ -190,18 +182,7 @@ a {
     align-items: center;
 
     position: relative;
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 .header__list {
@@ -216,15 +197,6 @@ a {
 .header__item:last-child {
     margin-right: 0;
 }
-
-/* .header__item:not(:last-of-type){
-    margin-right: 35px;
-} */
-
-/* .header__item + .header__item{
-    margin-left: 35px;
-} */
-
 
 .header__link {
     font-size: 16px;
@@ -243,21 +215,28 @@ a {
     border-bottom: 2px solid #ffd68f;
 }
 
-.logo {
-    display: block;
-    max-width: 100%;
-}
+
+/* ======logo====== */
+
 
 .header__logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    display: block;
+    max-width: 100%;
 }
+
+
+
 
 .header__icons {
     display: flex;
     align-items: center;
 }
+
+/* ====personal====== */
 
 .header__personal {
     position: relative;
@@ -323,6 +302,8 @@ a {
     border-radius: 50%;
 }
 
+/* ======social======= */
+
 .social__list {
     display: flex;
     justify-content: space-between;
@@ -366,6 +347,10 @@ a {
 .header__content {
     align-self: center;
 }
+
+
+
+/* =======btn======= */
 
 .btn {
     padding: 15px 30px;
@@ -420,8 +405,6 @@ a {
 }
 
 
-
-
 .header__btn {
     width: 280px;
     padding: 22px 40px;
@@ -433,12 +416,6 @@ a {
     border-radius: 35px;
 }
 
-/* .header__btn::after {
-    content: url("../assets/images/Arrow.png");
-    position: absolute;
-    top: 20px;
-    right: 35px;
-} */
 
 
 /* ==========smoothies============== */
@@ -497,20 +474,6 @@ a {
 
     text-align: center;
 }
-
-/* 
-.smoothies__column:nth-child(2n + 1) {
-    border-bottom: 1px solid $white-b;
-    border-left: 0px solid $white-b;
-}
-.smoothies__column:nth-child(2n + 6) {
-    border-bottom: 1px solid $white-b;
-    border-left: 1px solid $white-b;
-}
-.smoothies__column:nth-child(1n + 7) {
-    border-bottom: 0px solid $white-b;
-} */
-
 
 .smoothies__item:first-child {
     border-bottom: 2px solid #f6edde;
@@ -630,14 +593,6 @@ a {
     border: solid 2px #f8b231;
 }
 
-/* .about__bth::after {
-    content: url("../assets/images/Arrow.png");
-    position: absolute;
-    top: 15px;
-    right: 35px;
-} */
-
-
 /* =============products=========== */
 
 .products__items {
@@ -700,12 +655,6 @@ a {
     text-align: left;
 }
 
-/* .products__btn::after {
-    content: url("../assets/images/Arrow-white.png");
-    position: absolute;
-    top: 20px;
-    right: 35px;
-} */
 
 .products__btn::after {
     background: url(../assets/images/Arrow-white.png) center no-repeat;
@@ -1065,23 +1014,6 @@ a {
     color: #fff;
 }
 
-/* 
-.footer__payment {
-  max-width: 250px;
-}
-
-.footer__inner {
-margin-top: 25px;
-}
-
-.payment__wrap {
-    margin-bottom: 20px;
-}
-    
-.payment__img:not(:last-of-type){
-    margin-right: 15px;
-} */
-
 
 .footer__payment {
     margin: 0 0 0 10px;
@@ -1137,7 +1069,6 @@ margin-top: 25px;
 }
 
 .footer__input:focus {
-    /* border: 1px solid #6d450c; */
     box-shadow: 0 0 10px #6d450c;
 }
 
@@ -1159,7 +1090,6 @@ margin-top: 25px;
 }
 
 .footer__btn:focus {
-    /* border: 1px solid #6d450c; */
     box-shadow: 0 0 5px #6d450c;
 }
 
@@ -1246,15 +1176,6 @@ margin-top: 25px;
     background-color: #f2662f;
 }
 
-/* 
-.up__btn::after {
-    content: url("../assets/images/arrow-sm-white.png");
-    position: absolute;
-    top: 10px;
-    right: 50%;
-    transform: translateX(50%);
-    z-index: 10;
-} */
 
 .up__btn::after {
     width: 13px;
@@ -1274,9 +1195,13 @@ margin-top: 25px;
     height: 100vh;
 } */
 
-/* ===============@MEDIA========== */
 
 
+
+
+
+
+/* ========================@MEDIA====================== */
 
 @media (min-width: 1910px) and (max-width: 1930px) {
     .header__personal:after {
@@ -1285,13 +1210,16 @@ margin-top: 25px;
 }
 
 
-/* ===============@media max1600========== */
+/* ===============@media max1600===================== */
 
+/* ======header===== */
 
 @media (max-width: 1600px) {
 
     .header {
         padding: 70px 0;
+
+        max-height: 700px;
     }
 
 
@@ -1325,48 +1253,28 @@ margin-top: 25px;
 
 /* ===============@media max1280========== */
 
+/* ======header===== */
 
 @media (max-width: 1280px) {
-
-
     .header__inner {
         flex-direction: column;
-
     }
 
     .header__icons {
         flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
-        /* align-items: center; */
         padding: 25px 20px 0 0;
 
+        width: 100%;
     }
-
-
 
     .header__nav {
         width: 100%;
     }
 
-    .header__list {
-        /* display: flex;
-ul 
-
-    span burger close
-  
-}
-
-
-
-    justify-content: space-between; */
-    }
-
     .social__item {
         margin-right: 30px;
     }
-
-
 
     .header__link {
         font-size: 20px;
@@ -1379,9 +1287,58 @@ ul
 }
 
 
+/* ===============@media max1040========== */
+
+/* ======smoothies===== */
+
+@media (max-width: 1040px) {
+
+    .title {
+        font-size: 46px;
+    }
+
+    .text {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .smoothies__title {
+        margin-bottom: 40px;
+    }
+
+
+    .smoothies__items {
+        margin: 0 60px;
+    }
+
+    .smoothies__item {
+        padding: 20px 0;
+
+        flex-basis: 50%;
+    }
+
+    .smoothies__item:nth-child(2) {
+        border-bottom: 2px solid #f6edde;
+        border-right: none;
+    }
+
+    .smoothies__item:nth-child(5) {
+        border-bottom: 2px solid #f6edde;
+    }
+
+    .smoothies__item:nth-child(6) {
+        border-right: none;
+        border-bottom: 2px solid #f6edde;
+    }
+
+
+}
+
+
 
 /* ===============@media max768========== */
 
+/* ======header===== */
 
 @media (max-width: 768px) {
 
@@ -1390,15 +1347,12 @@ ul
     }
 
     .header {
-
         padding: 50px 0;
-
     }
 
     .header__top {
         padding: 0 25px;
     }
-
 
 
     .burger {
@@ -1408,16 +1362,16 @@ ul
     }
 
 
-
     .header__nav {
         display: block;
-        z-index: 20;
 
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
+
+        z-index: 20;
 
         transform: translateX(-100%)
     }
@@ -1426,33 +1380,27 @@ ul
         transform: translateX(0%)
     }
 
-    .header .header__list {
-
+    .header__list {
         flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
 
         padding: 90px;
         background-color: #0aa566;
+
         width: 100%;
         height: 100%;
+
+        overflow-y: auto;
     }
-
-    .header__item {
-        top: -175px;
-        left: 75px;
-
-    }
-
-
-
-
-
-
 
     .header__icons {
         flex-direction: column;
-        align-items: center;
-        margin-left: 55px;
         align-items: flex-end;
+    }
+
+    .social__item {
+        margin-right: 25px;
     }
 
     .header__logo {
@@ -1469,18 +1417,60 @@ ul
     }
 
 
+/* ======smoothies===== */
+
+.smoothies {
+    padding: 80px 0;
+}
+
+.smoothies__wrap {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.smoothies__title {
+    margin-bottom: 30px;
+}
+
+.smoothies__text {
+    margin-bottom: 35px;
+}
+
+
+.smoothies__items {
+    margin: 0 40px;
+}
+
+.smoothies__subtitle {
+    font-size: 24px;
+}
 
 
 
+}
 
 
+@media (max-width: 450px) {
 
+    /* ======header===== */
 
+    .header {
+        padding: 30px 0;
+        max-height: 500px;
+    }
 
-
-
-
-
-
+    .header__btn {
+        width: 245px;
+        padding: 18px 35px;
+        font-size: 22px;
+    }
 
 }
