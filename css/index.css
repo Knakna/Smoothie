@@ -676,6 +676,8 @@ a {
 .story__content {
     max-width: 515px;
 
+    margin-right: 50px;
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1211,52 +1213,54 @@ a {
     }
 }
 
-@media (min-width: 2100px) {
-    .header__personal:after {
-        display: block;
-    }
-}
 
 
-/* ===============@media max1890===================== */
 
-/* ======about===== */
+/* ===============@media max1890============================ */
+
 
 @media (max-width: 1890px) {
 
-.about {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
+    /* ======about===== */
+
+    .about {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
     .about__img {
-       width: 300px;
-       left: 180px;
-       bottom: -130px;
+        width: 300px;
+        left: 180px;
+        bottom: -130px;
+    }
+
+
+    /* ======story===== */
+
+    .story__wrap-img::before {
+        top: -90px;
+        left: -100px;
     }
 
 }
 
 
 
-/* ===============@media max1600===================== */
+/* ===============@media max1600========================= */
 
-/* ======header===== */
 
 @media (max-width: 1600px) {
 
+    /* ======header===== */
+
     .header {
         padding: 70px 0;
-
-        /* max-height: 700px; */
     }
-
 
     .header__top {
         padding: 0 40px;
     }
-
 
     .header__nav {
         width: 100%;
@@ -1265,7 +1269,6 @@ a {
     .header__list {
         margin-bottom: 35px;
     }
-
 
     .header__link {
         font-size: 20px;
@@ -1296,30 +1299,46 @@ a {
     }
 
 
-/* ======products===== */
+    /* ======products===== */
 
-.products__item {
- 
-padding: 80px 25px;
+    .products__item {
+
+        padding: 80px 25px;
+    }
+
+    .products__subtitle {
+        max-width: 130px;
+        margin: 0 auto;
+    }
+
+    /* ======story===== */
+
+    .story {
+        justify-content: center;
+
+        padding: 100px;
+    }
+
+    .story__img {
+        width: 400px;
+    }
+
+    .story__wrap-img::before {
+        top: -90px;
+        left: -180px;
+    }
+
+
 }
 
-.products__subtitle {
-    max-width: 130px;
-    margin: 0 auto;
-}
 
 
+/* ===============@media max1280======================= */
 
-
-}
-
-
-
-/* ===============@media max1280========== */
-
-/* ======header===== */
 
 @media (max-width: 1280px) {
+
+    /* ======header===== */
 
     .header__icons {
         padding: 25px 0 0;
@@ -1340,18 +1359,24 @@ padding: 80px 25px;
 
     /* ======about===== */
 
-.about__title--lawgreen::after {
-    content: "";
-   
-}
+    .about__title--lawgreen::after {
+        content: "";
+    }
 
-.about__title {
-    margin-bottom: 35px;
- }
+    .about__title {
+        margin-bottom: 35px;
+    }
 
 
- /* ======products===== */
+    /* ======story===== */
 
+    .story {
+        padding: 80px 20px;
+    }
+
+    .story__wrap-img::before {
+        content: "";
+    }
 
 
 }
@@ -1359,9 +1384,10 @@ padding: 80px 25px;
 
 /* ===============@media max1040========== */
 
-/* ======smoothies===== */
 
 @media (max-width: 1040px) {
+
+    /* ======smoothies===== */
 
     .title {
         font-size: 46px;
@@ -1372,10 +1398,14 @@ padding: 80px 25px;
         line-height: 1.5;
     }
 
+    .text {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
     .smoothies__title {
         margin-bottom: 40px;
     }
-
 
     .smoothies__items {
         margin: 0 60px;
@@ -1401,34 +1431,57 @@ padding: 80px 25px;
         border-bottom: 2px solid #f6edde;
     }
 
-/* ======about===== */
+
+    /* ======about===== */
+
+    .about__wrap-img {
+        display: none;
+    }
+
+    .about__title--lawgreen {
+        font-size: 46px;
+    }
 
 
-.about__wrap-img {
-    display: none;
+    /* ======products===== */
+
+    .products__item {
+        flex-basis: 50%;
+    }
+
+
+    /* ======story===== */
+
+    .story {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story__content {
+        margin: 0 auto;
+    }
+
+    .story__text {
+        text-align: justify;
+    }
+
+    .story__title {
+        margin: 20px auto;
+    }
+
+    .story__btn {
+        margin: 0 auto 30px;
+    }
+
 }
 
-.about__title--lawgreen {
-   font-size: 46px;
-}
-
-/* ======products===== */
 
 
-.products__item {    
-    flex-basis: 50%;
-}
-
-
-}
-
-
-
-/* ===============@media max768========== */
-
-/* ======header===== */
+/* ===============@media max768======================= */
 
 @media (max-width: 768px) {
+
+    /* ======header===== */
 
     body.lock {
         overflow: hidden;
@@ -1442,14 +1495,12 @@ padding: 80px 25px;
         padding: 0 25px;
     }
 
-
     .burger {
         display: block;
 
         left: 60px;
         top: 70px;
     }
-
 
     .header__nav {
         display: block;
@@ -1523,7 +1574,6 @@ padding: 80px 25px;
         max-width: 600px;
     }
 
-
     .smoothies__title {
         margin-bottom: 20px;
     }
@@ -1534,7 +1584,6 @@ padding: 80px 25px;
 
         text-align: justify;
     }
-
 
     .smoothies__items {
         margin: 0 40px;
@@ -1547,127 +1596,136 @@ padding: 80px 25px;
     }
 
 
-
-/* ======about===== */
-
-
-.about {
-    padding: 65px 30px;
-}
-
-.about__item {
-    font-size: 30px;
-    background: url(../assets/images/3sec-list.png) no-repeat 0 20px;
-}
-
-
-
-.about__bth {
-    width: 310px;
-
-    padding: 15px;
-     font-size: 18px;
-}
-
-
-/* ======products===== */
-.products__items {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-}
-
-/* .products__item {
- 
-padding: 50px 30px;
-}
- */
-
-
-
-}
-
-
-
-/* ===============@media max450========== */
-
-
-@media (max-width: 450px) {
-
-    /* ======header===== */
-
-    .header {
-        padding: 30px 0;
-    }
-
-    .header__btn {
-        width: 245px;
-
-        padding: 18px 35px;
-
-        font-size: 22px;
-    }
-
-
-    .burger {
-        display: block;
-
-        width: 40px;
-        height: 30px;
-
-        left: 20px;
-        top: 55px;
-    }
-
-
-    /* ======smoothies===== */
-
-    
-
-    .smoothies__item {
-        padding: 20px 0;
-
-        flex-basis: 100%;
-    }
-
-.smoothies__item:nth-of-type(1n) {
-    border: none;
-}
-
-.smoothies__item:not(:last-child) {
-    
-    border-bottom: 2px solid #f6edde;
-}
-
-
-
     /* ======about===== */
-.about {
-    padding: 65px 15px;
-}
 
-.about__content {
-    padding: 15px;
-}
+    .about {
+        padding: 65px 30px;
+    }
 
-.about__title, .about__title--lawgreen {
-    margin-bottom: 25px;
+    .about__item {
+        font-size: 30px;
+        background: url(../assets/images/3sec-list.png) no-repeat 0 20px;
+    }
 
-    text-align: center;
-    font-size: 34px;
-}
+    .about__bth {
+        width: 310px;
 
-.about__bth {
-    margin: 0 auto; 
-
-    width: 260px;
-}
-
-.about__bth::after {
-   content: "";
-   background-image: none;
-}
+        padding: 15px;
+        font-size: 18px;
+    }
 
 
+    /* ======products===== */
 
+    .products__items {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
 
 }
+
+
+/* ===============@media max660============================== */
+
+
+@media (max-width: 660px) {
+
+    /* ======story===== */
+
+    .story {
+        padding: 40px 20px;
+    }
+
+    .story__wrap-img {
+        display: none;
+    }
+
+
+    /* ===============@media max450============================= */
+
+    @media (max-width: 450px) {
+
+        /* ======header===== */
+
+        .header {
+            padding: 30px 0;
+        }
+
+        .header__btn {
+            width: 245px;
+
+            padding: 18px 35px;
+
+            font-size: 22px;
+        }
+
+
+        .burger {
+            display: block;
+
+            width: 40px;
+            height: 30px;
+
+            left: 20px;
+            top: 55px;
+        }
+
+
+        /* ======smoothies===== */
+
+        .smoothies__item {
+            padding: 20px 0;
+
+            flex-basis: 100%;
+        }
+
+        .smoothies__item:nth-of-type(1n) {
+            border: none;
+        }
+
+        .smoothies__item:not(:last-child) {
+            border-bottom: 2px solid #f6edde;
+        }
+
+
+        /* ======about===== */
+
+        .about {
+            padding: 65px 15px;
+        }
+
+        .about__content {
+            padding: 15px;
+        }
+
+        .about__title,
+        .about__title--lawgreen {
+            margin-bottom: 25px;
+
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .about__bth {
+            margin: 0 auto;
+
+            width: 260px;
+        }
+
+        .about__btn::after {
+            background-image: none;
+        }
+
+        
+        /* ======story===== */
+
+        .story__btn {
+            width: 260px;
+        }
+
+        .story__btn::after {
+            background-image: none;
+        }
+
+
+    }
