@@ -587,7 +587,7 @@ a {
     font-weight: 800;
 }
 
-.about__bth {
+.about__btn {
     width: 380px;
     min-height: 60px;
 
@@ -716,7 +716,7 @@ a {
 /* =============testimonials=========== */
 
 .testimonials {
-    padding: 115px 0 80px;
+    padding: 115px 40px 80px;
 
     display: flex;
     flex-direction: column;
@@ -1329,6 +1329,13 @@ a {
     }
 
 
+    /* ======testimonials=== */
+
+    .testimonials::before {
+        content: "";
+    }
+
+
 }
 
 
@@ -1378,6 +1385,16 @@ a {
         content: "";
     }
 
+
+    /* ===testimonials===== */
+
+    .testimonials__review::before {
+        content: "";
+    }
+
+    .testimonials__title {
+        margin-bottom: 90px;
+    }
 
 }
 
@@ -1472,6 +1489,24 @@ a {
     .story__btn {
         margin: 0 auto 30px;
     }
+
+
+    /* ===testimonials ===== */
+
+
+    .testimonials__content {
+        flex-direction: column-reverse
+    }
+
+    .testimonials__img {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .testimonials__review {
+        padding: 35px 10px 0;        
+    }
+
 
 }
 
@@ -1607,7 +1642,7 @@ a {
         background: url(../assets/images/3sec-list.png) no-repeat 0 20px;
     }
 
-    .about__bth {
+    .about__btn {
         width: 310px;
 
         padding: 15px;
@@ -1639,6 +1674,19 @@ a {
     .story__wrap-img {
         display: none;
     }
+
+ /* ===testimonials ===== */
+
+ .testimonials__title {
+    margin-bottom: 60px;
+
+    line-height: 1.2;
+}
+
+
+
+}
+
 
 
     /* ===============@media max450============================= */
@@ -1673,18 +1721,9 @@ a {
 
         /* ======smoothies===== */
 
-        .smoothies__item {
-            padding: 20px 0;
 
-            flex-basis: 100%;
-        }
-
-        .smoothies__item:nth-of-type(1n) {
-            border: none;
-        }
-
-        .smoothies__item:not(:last-child) {
-            border-bottom: 2px solid #f6edde;
+        .smoothies__items {
+            display: none;
         }
 
 
@@ -1706,7 +1745,7 @@ a {
             font-size: 34px;
         }
 
-        .about__bth {
+        .about__btn {
             margin: 0 auto;
 
             width: 260px;
@@ -1716,7 +1755,7 @@ a {
             background-image: none;
         }
 
-        
+
         /* ======story===== */
 
         .story__btn {
@@ -1727,5 +1766,15 @@ a {
             background-image: none;
         }
 
+        
+        /* ======testimonials===== */
+
+        .testimonials {
+            padding: 60px 40px 100px;           
+        }
+
+        .testimonials__content {
+            margin-bottom: 60px;
+        }
 
     }
