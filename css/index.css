@@ -980,6 +980,8 @@ a {
     flex-wrap: wrap;
 
     padding: 65px 20px;
+
+    position: relative;
 }
 
 .footer__logo {
@@ -1110,8 +1112,8 @@ a {
     max-width: 120px;
     margin-left: 325px;
 
-    position: relative;
-    top: -55px;
+    position: absolute;
+    top: 215px;
 }
 
 .social__item:focus {
@@ -1194,12 +1196,12 @@ a {
 }
 
 
-
+/* 
 .del {
     height: 100vh;
 }
 
-
+ */
 
 
 
@@ -1212,7 +1214,6 @@ a {
         display: block;
     }
 }
-
 
 
 
@@ -1348,8 +1349,8 @@ a {
 
     .footer__information {
         margin-left: 0;
-        margin-right: 20px;
     }
+
 
     .footer__payment {
         margin: 0;
@@ -1363,15 +1364,14 @@ a {
         padding-left: 0;
     }
 
-    .footer__form::after {        
+    .footer__form::after {
         bottom: 55px;
         left: -5px;
-        }
+    }
 
-        .footer__social {
-            position: static;     
-            margin-left: 0;    
-        }
+    .footer__social {
+        margin-left: 150px;
+    }
 
 }
 
@@ -1459,6 +1459,57 @@ a {
         padding: 40px 0 5px;
     }
 
+    /* ========footer====== */
+
+    .footer__logo {
+        order: -2;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__caption {
+        letter-spacing: 1px;
+    }
+
+    .footer__information {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 50%;
+    }
+
+    .footer__payment {
+        flex-basis: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__inner {
+        max-width: 360px;
+        height: auto;
+    }
+
+
+
+    .footer__subscription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 50px;
+
+        order: -1;
+        flex-basis: 50%;
+    }
+
+    .footer__logo {
+        margin-bottom: 60px;
+    }
+
 
 }
 
@@ -1472,18 +1523,18 @@ a {
 
     .title {
         font-size: 46px;
+
+        text-align: center;
     }
 
     .text {
         font-size: 24px;
         line-height: 1.5;
+
+        text-align: center;
     }
 
-    .text {
-        font-size: 24px;
-        line-height: 1.5;
-    }
-
+    
     .smoothies__title {
         margin-bottom: 40px;
     }
@@ -1571,6 +1622,32 @@ a {
         padding: 35px 10px 0;
     }
 
+    /* =========footer====== */
+
+
+    .footer__logo {
+        flex-basis: 100%;
+    }
+
+    .footer__subscription {
+        flex-basis: 100%;
+    }
+
+    .footer__social {
+        top: 360px;
+    }
+
+    .footer__inner {
+        max-width: 275px;
+    }
+
+    .footer__caption {
+        font-size: 32px;
+    }
+
+    .footer__link {
+        font-size: 24px;
+    }
 
 }
 
@@ -1646,9 +1723,6 @@ a {
         margin-top: 310px;
     }
 
-    .logo__img {
-        width: 90%;
-    }
 
     .header__personal {
         margin-bottom: 25px;
@@ -1680,8 +1754,6 @@ a {
     .smoothies__text {
         margin-bottom: 35px;
         padding: 0;
-
-        text-align: justify;
     }
 
     .smoothies__items {
@@ -1735,6 +1807,38 @@ a {
         content: none;
     }
 
+    .blog__more::after {
+        content: "";
+    }
+
+
+
+    /* ===footer===== */
+
+    .footer__information {
+        order: 1;
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+
+    .footer__payment {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__form {
+        margin-top: 20px;
+    }
+
+    .footer__inner {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .footer__list {
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -1774,15 +1878,20 @@ a {
     .blog__text {
         padding-left: 0;
         margin-top: 20px;
+
+        text-align: justify;
     }
 
     .blog {
         padding: 80px 20px 0;
     }
 
-
+    /* =========footer====== */
+    .up {
+        top: -10px;
+        right: 5%;
+    }
 }
-
 
 
 /* ===============@media max450============================= */
@@ -1871,6 +1980,22 @@ a {
 
     .testimonials__content {
         margin-bottom: 60px;
+    }
+
+
+    /* =========footer====== */
+
+    .footer__input {
+        width: 265px;
+        padding: 15px;
+    }
+
+    .footer__input {
+        background-image: none;
+    }
+
+    .footer__social {
+        margin-left: 100px;
     }
 
 }
