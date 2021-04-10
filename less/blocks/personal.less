@@ -3,9 +3,7 @@
 .personal {
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .flex();
         margin-right: 135px;
         @media @bpMax1600 {
             margin-right: 15px;
@@ -13,13 +11,11 @@
     }
 
     &__item {
-        margin-right: 45px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex(center);
 
         position: relative;
+
+        margin-right: 45px;
 
         transition: background-color .2s linear;
 
@@ -31,17 +27,10 @@
             transform: translateY(-5px);
         }
 
-
         &:last-child {
             margin-right: 0;
         }
-
-
-
     }
-
-
-
 
     &__numeric {
         width: 18px;
@@ -51,14 +40,13 @@
         right: -16px;
         top: -11px;
 
-        font-size: 10px;
+        font-size: 1rem;
         line-height: 2;
-        color: #000000;
+        color: @black;
         text-align: center;
 
-        background: #fff;
+        background: @white;
         border-radius: 50%;
     }
-
 }
 
