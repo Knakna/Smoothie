@@ -1,4 +1,4 @@
-// out: ../dist/app.css, compress: true, sourceMap: true
+// out: ../dist/app.css, compress: false, sourceMap: true
 
 
 
@@ -76,7 +76,7 @@ a {
     border: 0;
     outline: none;
     cursor: pointer;
-    /* transition: background-color .2s linear; */
+ /*transition: background-color .2s linear; */
 
     z-index: 25;
 }
@@ -95,7 +95,7 @@ a {
     background-color: #000;
 
     border: 0;
-    /* transition: all .2s linear; */
+   /* transition: all .8s linear;*/
     z-index: 6;
 }
 
@@ -171,54 +171,6 @@ a {
 /* ====personal====== */
 
 
-
-.personal__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 135px;
-}
-
-.personal__item {
-    margin-right: 45px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-
-    transition: background-color .2s linear;
-}
-
-.personal__item:hover {
-    background-color: #ffd68f;
-    border-radius: 50%;
-    border: none;
-
-    transform: translateY(-5px);
-}
-
-.personal__item:last-child {
-    margin-right: 0;
-}
-
-.personal__numeric {
-    width: 18px;
-    height: 18px;
-
-    position: absolute;
-    right: -16px;
-    top: -11px;
-
-    font-size: 10px;
-    line-height: 2;
-    color: #000000;
-    text-align: center;
-
-    background: #fff;
-    border-radius: 50%;
-}
 
 /* ======social======= */
 
@@ -1877,7 +1829,7 @@ a {
     /* ======header===== */
 
 
-    
+
 
     .burger {
         display: block;
@@ -1981,3 +1933,7 @@ a {
 
 
 @import "./blocks/header.less";
+@import "./blocks/personal.less";
+@import "./blocks/social.less";
+@import "./blocks/burger.less";
+@import "./blocks/btn.less";

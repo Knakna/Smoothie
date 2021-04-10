@@ -42,9 +42,7 @@
 
         @media @bpMax768 {
             padding: 0 25px;
-
         }
-
     }
 
     &__nav {
@@ -103,14 +101,15 @@
             margin-right: 0;
         }
 
+        &:not(:last-child) {
+            margin-right: 35px;
+        }
+
     }
 
-    &__item:not(:last-child) {
-        margin-right: 35px;
-    }
 
     &__link {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: bold;
         line-height: 2.5;
         text-transform: uppercase;
@@ -122,15 +121,14 @@
             font-size: 2rem;
         }
 
+        &:hover {
+            padding-bottom: 5px;
+            color: @brandLighter;
+            border-bottom: 2px solid @brandLighter;
+        }
+
 
     }
-
-    &__link:hover {
-        padding-bottom: 5px;
-        color: @brandLighter;
-        border-bottom: 2px solid @brandLighter;
-    }
-
 
 
     &__logo {
@@ -147,8 +145,6 @@
         @media @bpMax768 {
             margin-top: 310px;
         }
-
-
 
     }
 
@@ -173,32 +169,32 @@
 
     }
 
-
     &__personal {
         position: relative;
+
         @media @bpMax768 {
             margin-bottom: 35px;
 
             align-self: flex-end;
         }
 
-    }
+        &:after {
+            content: "";
+            width: 45px;
+            height: 2px;
 
-    &__personal:after {
-        content: "";
-        width: 45px;
-        height: 2px;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            z-index: 10;
 
-        position: absolute;
-        top: 10px;
-        right: 30px;
-        z-index: 10;
+            background: @brandLighter;
 
-        background: @brandLighter;
-
-        @media @bpMax1600 {
-            display: none;
+            @media @bpMax1600 {
+                display: none;
+            }
         }
+
     }
 
     &__social {
@@ -207,12 +203,11 @@
 
             align-self: flex-end;
         }
-
     }
 
-
-
     &__content {
+        align-self: center;
+
         @media @bpMax1600 {
             margin-top: 50px;
         }
@@ -220,8 +215,6 @@
         @media @bpMax768 {
             margin-top: 80px;
         }
-
-
     }
 
     &__btn {
@@ -241,10 +234,6 @@
 
             font-size: 22px;
         }
-
     }
-
-
-
 
 }

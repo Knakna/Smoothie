@@ -1,0 +1,64 @@
+// main: ../main.less
+
+.personal {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 135px;
+        @media @bpMax1600 {
+            margin-right: 15px;
+        }
+    }
+
+    &__item {
+        margin-right: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: #ffd68f;
+            border-radius: 50%;
+            border: none;
+
+            transform: translateY(-5px);
+        }
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+
+    }
+
+
+
+
+    &__numeric {
+        width: 18px;
+        height: 18px;
+
+        position: absolute;
+        right: -16px;
+        top: -11px;
+
+        font-size: 10px;
+        line-height: 2;
+        color: #000000;
+        text-align: center;
+
+        background: #fff;
+        border-radius: 50%;
+    }
+
+}
+
