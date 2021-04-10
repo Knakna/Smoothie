@@ -68,7 +68,6 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
-/* =============header=========== */
 .visuallyhidden {
   margin: 0;
   padding: 0;
@@ -76,9 +75,6 @@ a {
   height: 1px;
   overflow: hidden;
 }
-/* ====personal====== */
-/* ======social======= */
-/* =======btn======= */
 /* ==========smoothies============== */
 .smoothies {
   padding: 100px 0 170px;
@@ -89,24 +85,9 @@ a {
   flex-direction: column;
   margin: 0 auto;
 }
-.title {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 0.8;
-  letter-spacing: -1px;
-  color: #f7ae3b;
-}
 .smoothies__title {
   margin-bottom: 50px;
   text-align: center;
-}
-.text {
-  line-height: 1.9;
-  text-align: center;
-  color: #fff;
-}
-.text--black {
-  color: #1e1e1e;
 }
 .smoothies__text {
   margin-bottom: 60px;
@@ -1569,5 +1550,20 @@ a {
   z-index: 1;
   transform: translateY(-50%);
   background: url(../assets/images/Arrow.png) center no-repeat;
+}
+.text {
+  line-height: 1.9;
+  text-align: center;
+  color: #fff;
+}
+.text--black {
+  color: #1e1e1e;
+}
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -1px;
+  color: #f6ab3b;
 }
 /*# sourceMappingURL=./app.css.map */
