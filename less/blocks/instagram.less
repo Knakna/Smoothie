@@ -1,1 +1,87 @@
 // main: ../main.less
+
+
+
+.instagram {
+    padding: 0 0 5px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    &__reference {
+        margin: 0 auto 40px;
+
+        display: flex;
+        align-items: center;
+        color: @bgBtn;
+
+        &:hover .instagram__title {
+            color: lighten(@bgBtn, 5%);
+        }
+
+        &:hover .instagram__icon {
+            fill: lighten(@bgBtn, 5%);
+        }
+
+    }
+
+    &__icon {
+        height: 26px;
+        width: 26px;
+        margin-right: 10px;
+
+        fill: @bgBtn;
+
+        transition: fill .2s linear;
+
+
+        &--white {
+            height: 26px;
+            width: 26px;
+
+            position: absolute;
+            bottom: 23px;
+            right: 10px;
+
+            fill: @white;
+
+            transition: fill .2s linear;
+        }
+    }
+
+
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 1.7;
+        letter-spacing: -0.5px;
+
+        transition: color .2s linear;
+    }
+
+    &__items {
+        display: flex;
+
+        overflow-x: auto;
+    }
+
+    &__link {
+        flex: 0 1 20%;
+        min-width: 250px;
+
+        position: relative;
+
+        &:hover .instagram__icon--white {
+            fill: lighten(@bgBtn, 5%);
+        }
+    }
+
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
