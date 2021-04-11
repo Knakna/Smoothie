@@ -76,62 +76,6 @@ a {
   overflow: hidden;
 }
 /* ==========smoothies============== */
-.smoothies {
-  padding: 100px 0 170px;
-}
-.smoothies__wrap {
-  max-width: 1010px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.smoothies__title {
-  margin-bottom: 50px;
-  text-align: center;
-}
-.smoothies__text {
-  margin-bottom: 60px;
-  padding: 0 50px;
-}
-.smoothies__items {
-  display: flex;
-  flex-wrap: wrap;
-}
-.smoothies__item {
-  padding: 25px 0;
-  flex-basis: 25%;
-  text-align: center;
-}
-.smoothies__item:first-child {
-  border-bottom: 2px solid #f6edde;
-  border-right: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(2) {
-  border-bottom: 2px solid #f6edde;
-  border-right: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(3) {
-  border-bottom: 2px solid #f6edde;
-  border-right: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(4) {
-  border-bottom: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(5) {
-  border-right: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(6) {
-  border-right: 2px solid #f6edde;
-}
-.smoothies__item:nth-child(7) {
-  border-right: 2px solid #f6edde;
-}
-.smoothies__subtitle {
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1.6;
-  color: #f2612d;
-}
 /* =============about=========== */
 .about {
   padding: 65px 0 95px;
@@ -803,37 +747,6 @@ a {
 }
 /* ===============@media max1040========== */
 @media (max-width: 1040px) {
-  /* ======smoothies===== */
-  .title {
-    font-size: 46px;
-    text-align: center;
-  }
-  .text {
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  .smoothies__title {
-    margin-bottom: 40px;
-  }
-  .smoothies__items {
-    margin: 0 60px;
-  }
-  .smoothies__item {
-    padding: 20px 0;
-    flex-basis: 50%;
-  }
-  .smoothies__item:nth-child(2) {
-    border-bottom: 2px solid #f6edde;
-    border-right: none;
-  }
-  .smoothies__item:nth-child(5) {
-    border-bottom: 2px solid #f6edde;
-  }
-  .smoothies__item:nth-child(6) {
-    border-right: none;
-    border-bottom: 2px solid #f6edde;
-  }
   /* ======about===== */
   .about__wrap-img {
     display: none;
@@ -913,24 +826,6 @@ a {
   /* ======header===== */
   body.lock {
     overflow: hidden;
-  }
-  /* ======smoothies===== */
-  .smoothies {
-    padding: 80px 30px;
-  }
-  .smoothies__title {
-    margin-bottom: 20px;
-  }
-  .smoothies__text {
-    margin-bottom: 35px;
-    padding: 0;
-  }
-  .smoothies__items {
-    margin: 0 40px;
-  }
-  .smoothies__subtitle {
-    margin: 0 10px;
-    font-size: 24px;
   }
   /* ======about===== */
   .about {
@@ -1035,10 +930,6 @@ a {
 }
 /* ===============@media max550============================= */
 @media (max-width: 550px) {
-  /*========smoothies == */
-  .smoothies__items {
-    margin: 0;
-  }
   /* products */
   .products__item {
     padding-top: 50px;
@@ -1051,11 +942,6 @@ a {
 }
 /* ===============@media max450=============================== */
 @media (max-width: 450px) {
-  /* ======header===== */
-  /* ======smoothies===== */
-  .smoothies__items {
-    display: none;
-  }
   /* ======about===== */
   .about {
     padding: 65px 0;
@@ -1556,6 +1442,13 @@ a {
   text-align: center;
   color: #fff;
 }
+@media (max-width: 1040px) {
+  .text {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
 .text--black {
   color: #1e1e1e;
 }
@@ -1565,5 +1458,146 @@ a {
   line-height: 0.8;
   letter-spacing: -1px;
   color: #f6ab3b;
+}
+@media (max-width: 1040px) {
+  .title {
+    font-size: 4.6rem;
+    text-align: center;
+  }
+}
+.smoothies {
+  padding: 100px 30px 170px;
+}
+@media (max-width: 768px) {
+  .smoothies {
+    padding: 80px 30px;
+  }
+}
+@media (max-width: 450px) {
+  .smoothies {
+    padding: 65px 20px 60px;
+  }
+}
+.smoothies__wrap {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.smoothies__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1040px) {
+  .smoothies__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .smoothies__title {
+    margin-bottom: 20px;
+  }
+}
+.smoothies__text {
+  margin-bottom: 60px;
+  padding: 0 50px;
+}
+@media (max-width: 1280px) {
+  .smoothies__text {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .smoothies__text {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+}
+.smoothies__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1040px) {
+  .smoothies__items {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .smoothies__items {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 550px) {
+  .smoothies__items {
+    margin: 0;
+  }
+}
+@media (max-width: 450px) {
+  .smoothies__items {
+    display: none;
+  }
+}
+.smoothies__item {
+  padding: 25px 0;
+  flex-basis: 25%;
+  text-align: center;
+}
+@media (max-width: 1040px) {
+  .smoothies__item {
+    padding: 20px 0;
+    flex-basis: 50%;
+  }
+}
+.smoothies__item:first-child {
+  border-bottom: 2px solid #f6edde;
+  border-right: 2px solid #f6edde;
+}
+.smoothies__item:nth-child(2) {
+  border-bottom: 2px solid #f6edde;
+  border-right: 2px solid #f6edde;
+}
+@media (max-width: 1040px) {
+  .smoothies__item:nth-child(2) {
+    border-right: none;
+  }
+}
+.smoothies__item:nth-child(3) {
+  border-bottom: 2px solid #f6edde;
+  border-right: 2px solid #f6edde;
+}
+.smoothies__item:nth-child(4) {
+  border-bottom: 2px solid #f6edde;
+}
+.smoothies__item:nth-child(5) {
+  border-right: 2px solid #f6edde;
+}
+@media (max-width: 1040px) {
+  .smoothies__item:nth-child(5) {
+    border-bottom: 2px solid #f6edde;
+  }
+}
+.smoothies__item:nth-child(6) {
+  border-right: 2px solid #f6edde;
+}
+@media (max-width: 1040px) {
+  .smoothies__item:nth-child(6) {
+    border-bottom: 2px solid #f6edde;
+    border-right: none;
+  }
+}
+.smoothies__item:nth-child(7) {
+  border-right: 2px solid #f6edde;
+}
+.smoothies__subtitle {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.6;
+  color: #f2612d;
+}
+@media (max-width: 768px) {
+  .smoothies__subtitle {
+    margin: 0 10px;
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=./app.css.map */

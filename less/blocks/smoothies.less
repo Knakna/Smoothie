@@ -1,2 +1,141 @@
 // main: ../main.less
 
+
+.smoothies {
+    padding: 100px 30px 170px;
+    @media @bpMax768 {
+        padding: 80px 30px;
+    }
+
+    @media @bpMax450 {
+        padding: 65px 20px 60px;
+    }
+
+    &__wrap {
+        max-width: 1050px;
+
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+
+        text-align: center;
+
+        @media @bpMax1040 {
+            margin-bottom: 40px;
+        }
+
+        @media @bpMax768 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 60px;
+        padding: 0 50px;
+
+        @media @bpMax1280 {
+            padding: 0;
+        }
+
+        @media @bpMax768 {
+            margin-bottom: 35px;
+            padding: 0;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media @bpMax1040 {
+            margin-bottom: 60px;
+        }
+
+        @media @bpMax768 {
+            margin: 0 20px;
+        }
+
+        @media @bpMax550 {
+            margin: 0;
+        }
+
+        @media @bpMax450 {
+            display: none;
+        }
+    }
+
+    &__item {
+        padding: 25px 0;
+        flex-basis: 25%;
+
+        text-align: center;
+
+        @media @bpMax1040 {
+            padding: 20px 0;
+
+            flex-basis: 50%;
+        }
+
+        &:first-child {
+            border-bottom: 2px solid #f6edde;
+            border-right: 2px solid #f6edde;
+        }
+
+        &:nth-child(2) {
+            border-bottom: 2px solid #f6edde;
+            border-right: 2px solid #f6edde;
+
+            @media @bpMax1040 {
+                border-right: none;
+            }
+        }
+
+        &:nth-child(3) {
+            border-bottom: 2px solid #f6edde;
+            border-right: 2px solid #f6edde;
+        }
+
+        &:nth-child(4) {
+            border-bottom: 2px solid #f6edde;
+        }
+
+        &:nth-child(5) {
+            border-right: 2px solid #f6edde;
+
+            @media @bpMax1040 {
+                border-bottom: 2px solid #f6edde;
+            }
+        }
+
+        &:nth-child(6) {
+            border-right: 2px solid #f6edde;
+
+            @media @bpMax1040 {
+                border-bottom: 2px solid #f6edde;
+                border-right: none;
+            }
+        }
+
+        &:nth-child(7) {
+            border-right: 2px solid #f6edde;
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.8rem;
+        font-weight: 800;
+        line-height: 1.6;
+        color: #f2612d;
+
+        @media @bpMax768 {
+            margin: 0 10px;
+
+            font-size: 24px;
+        }
+    }
+}
