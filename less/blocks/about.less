@@ -1,1 +1,180 @@
 // main: ../main.less
+
+.about {
+    padding: 65px 0 95px;
+    background-color: @bgAbout;
+
+    @media @bpMax768 {
+        padding: 65px 30px;
+    }
+
+    @media @bpMax450 {
+        padding: 65px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: start;
+
+        @media @bpMax1400 {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    &__wrap-img {
+        height: 600px;
+        width: 615px;
+        position: relative;
+        margin-right: 240px;
+
+        @media @bpMax1600 {
+            margin-right: 125px;
+        }
+
+        @media @bpMax1400 {
+            margin: 0;
+
+            height: 565px;
+        }
+
+        @media @bpMax1040 {
+            display: none;
+        }
+    }
+
+    &__img {
+        position: absolute;
+
+        bottom: -190px;
+        left: 45px;
+
+        z-index: 1;
+
+        @media @bpMax1600 {
+            left: 5px;
+            bottom: -160px;
+        }
+
+        @media @bpMax1400 {
+            width: 85%;
+            margin: 0;
+            top: 60px;
+        }
+    }
+
+    &__content {
+        max-width: 595px;
+
+        margin-left: 15px;
+
+        @media @bpMax1600 {
+            margin-left: 0;
+        }
+
+        @media @bpMax450 {
+            padding: 15px;
+            margin-left: -10px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 55px;
+
+        color: @white;
+        line-height: 1.1;
+        font-size: 5.5rem;
+        text-align: left;
+
+        @media @bpMax1280 {
+            margin-bottom: 35px;
+        }
+
+        @media @bpMax450 {
+            margin-bottom: 25px;
+
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        &--lawgreen {
+            position: relative;
+
+            color: #cae941;
+
+            &::after {
+                content: "";
+                position: absolute;
+
+                width: 450px;
+                height: 13px;
+
+                top: 65px;
+                right: -20px;
+
+                background: url(../assets/images/Line.png) no-repeat;
+
+                @media @bpMax768 {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__list {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        padding: 10px 0 0 30px;
+
+        background: url(../assets/images/3sec-list.png) no-repeat 0 10px;
+        list-style: none;
+        font-size: 21px;
+        line-height: 1.1;
+        text-align: left;
+        color: @white;
+
+        @media @bpMax768 {
+            font-size: 3rem;
+            background: url(../assets/images/3sec-list.png) no-repeat 0 20px;
+        }
+
+        @media @bpMax450 {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__benefit {
+        font-weight: 800;
+    }
+
+    &__btn {
+        width: 38rem;
+        min-height: 6rem;
+
+        border-radius: @radius;
+        border: solid 2px #f8b231;
+
+        @media @bpMax768 {
+            width: 100%;
+            font-size: 3rem;
+        }
+
+        @media @bpMax600 {
+            font-size: 2rem;
+        }
+
+        @media @bpMax550 {
+            border-radius: 5rem;
+            text-align: center;
+        }
+
+        &::after {
+            @media @bpMax550 {
+                background-image: none;
+            }
+        }
+    }
+}
