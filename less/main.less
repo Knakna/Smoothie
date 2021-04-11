@@ -58,76 +58,6 @@ a {
 
 
 
-/* =============products=========== */
-
-
-.products__items {
-    display: flex;
-    flex-wrap: wrap;
-
-    text-align: center;
-}
-
-.products__item {
-    padding: 130px 0 80px;
-    flex-basis: 25%;
-}
-
-.products__item--chocolate {
-    background-color: #632b17;
-}
-
-
-.products__item--lettuce {
-    background-color: #178670;
-}
-
-.products__item--lemon {
-    background-color: #f7ae3b;
-}
-
-.products__item--turmeric {
-    background-color: #c3471b;
-}
-
-.products__img {
-    margin-bottom: 30px;
-}
-
-.products__subtitle {
-    margin-bottom: 10px;
-
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 0.9;
-    color: #fff;
-}
-
-.products__text {
-    margin-bottom: 55px;
-
-    display: inline-block;
-
-    font-size: 21px;
-    font-style: italic;
-    color: #fff;
-}
-
-.products__btn {
-    margin: 0 auto;
-    width: 204px;
-    height: 60px;
-
-    border: solid 2px #fff;
-    text-align: left;
-}
-
-
-.products__btn::after {
-    background: url(../assets/images/Arrow-white.png) center no-repeat;
-}
-
-
 
 /* =============story=========== */
 
@@ -718,17 +648,6 @@ a {
     @media @bpMax1600 {}
 
 
-    /* ======products===== */
-
-    .products__item {
-        padding: 80px 25px 40px;
-    }
-
-    .products__subtitle {
-        max-width: 130px;
-        margin: 0 auto;
-    }
-
     /* ======story===== */
 
     .story {
@@ -793,25 +712,10 @@ a {
 
 
 
-/* ===============@media max1400======================= */
-
-@media @bpMax1400 {}
-
-
 /* ===============@media max1280======================= */
 @media @bpMax1280 {}
 
 @media (max-width: 1280px) {
-
-
-
-
-    /* ======products===== */
-
-    .products__item {
-        flex-basis: 50%;
-    }
-
 
 
 
@@ -966,20 +870,6 @@ a {
 
 @media (max-width: 880px) {
     @media @bpMax880 {}
-
-    /* ====products===== */
-
-    .products__items {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .products__item {
-
-        min-width: 60%;
-    }
-
-
 
 
 
@@ -1180,16 +1070,11 @@ a {
 
 /* ===============@media max550============================= */
 
+@media @bpMax550 {}
+
 @media (max-width: 550px) {
 
 
-    /* products */
-
-    .products__item {
-        padding-top: 50px;
-
-        min-width: initial;
-    }
 
 
     /* ======footer===== */

@@ -75,55 +75,6 @@ a {
   height: 1px;
   overflow: hidden;
 }
-/* =============products=========== */
-.products__items {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.products__item {
-  padding: 130px 0 80px;
-  flex-basis: 25%;
-}
-.products__item--chocolate {
-  background-color: #632b17;
-}
-.products__item--lettuce {
-  background-color: #178670;
-}
-.products__item--lemon {
-  background-color: #f7ae3b;
-}
-.products__item--turmeric {
-  background-color: #c3471b;
-}
-.products__img {
-  margin-bottom: 30px;
-}
-.products__subtitle {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 0.9;
-  color: #fff;
-}
-.products__text {
-  margin-bottom: 55px;
-  display: inline-block;
-  font-size: 21px;
-  font-style: italic;
-  color: #fff;
-}
-.products__btn {
-  margin: 0 auto;
-  width: 204px;
-  height: 60px;
-  border: solid 2px #fff;
-  text-align: left;
-}
-.products__btn::after {
-  background: url(../assets/images/Arrow-white.png) center no-repeat;
-}
 /* =============story=========== */
 .story {
   padding: 120px 0 160px;
@@ -530,14 +481,6 @@ a {
 }
 /* ===============@media max1600========================= */
 @media (max-width: 1600px) {
-  /* ======products===== */
-  .products__item {
-    padding: 80px 25px 40px;
-  }
-  .products__subtitle {
-    max-width: 130px;
-    margin: 0 auto;
-  }
   /* ======story===== */
   .story {
     padding: 100px 0;
@@ -579,13 +522,8 @@ a {
     top: 0px;
   }
 }
-/* ===============@media max1400======================= */
 /* ===============@media max1280======================= */
 @media (max-width: 1280px) {
-  /* ======products===== */
-  .products__item {
-    flex-basis: 50%;
-  }
   /* ======story===== */
   .story {
     padding: 80px 0;
@@ -684,14 +622,6 @@ a {
 }
 /* ===============@media max880======================= */
 @media (max-width: 880px) {
-  /* ====products===== */
-  .products__items {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-  .products__item {
-    min-width: 60%;
-  }
   /* ======footer===== */
   .footer__top {
     justify-content: center;
@@ -810,11 +740,6 @@ a {
 }
 /* ===============@media max550============================= */
 @media (max-width: 550px) {
-  /* products */
-  .products__item {
-    padding-top: 50px;
-    min-width: initial;
-  }
   /* ======footer===== */
   .footer__input {
     width: 345px;
@@ -1631,5 +1556,91 @@ a {
   .about__btn::after {
     background-image: none;
   }
+}
+.products__items {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 880px) {
+  .products__items {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+}
+.products__item {
+  padding: 130px 0 80px;
+  flex-basis: 25%;
+}
+@media (max-width: 1600px) {
+  .products__item {
+    padding: 80px 25px 65px;
+  }
+}
+@media (max-width: 1280px) {
+  .products__item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 880px) {
+  .products__item {
+    min-width: 60%;
+  }
+}
+@media (max-width: 550px) {
+  .products__item {
+    padding-top: 50px;
+    min-width: initial;
+  }
+}
+.products__item--chocolate {
+  background-color: #632b17;
+}
+.products__item--lettuce {
+  background-color: #178670;
+}
+.products__item--lemon {
+  background-color: #f7ae3b;
+}
+.products__item--turmeric {
+  background-color: #c3471b;
+}
+.products__img {
+  margin-bottom: 30px;
+}
+.products__subtitle {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1600px) {
+  .products__subtitle {
+    max-width: 130px;
+    margin: 0 auto 15px;
+  }
+}
+.products__text {
+  margin-bottom: 55px;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-style: italic;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  .products__text {
+    margin-bottom: 35px;
+  }
+}
+.products__btn {
+  margin: 0 auto;
+  width: 20.4rem;
+  height: 6rem;
+  border: solid 2px #fff;
+  text-align: left;
+}
+.products__btn::after {
+  background: url(../assets/images/Arrow-white.png) center no-repeat;
 }
 /*# sourceMappingURL=./app.css.map */

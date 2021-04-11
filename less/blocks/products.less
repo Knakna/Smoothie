@@ -1,2 +1,103 @@
 // main: ../main.less
 
+.products {
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+
+        text-align: center;
+
+        @media @bpMax880 {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__item {
+        padding: 130px 0 80px;
+        flex-basis: 25%;
+
+        @media @bpMax1600 {
+            padding: 80px 25px 65px;
+        }
+
+        @media @bpMax1280 {
+            flex-basis: 50%;
+        }
+
+        @media @bpMax880 {
+            min-width: 60%;
+        }
+
+        @media @bpMax550 {
+            padding-top: 50px;
+
+            min-width: initial;
+        }
+
+        &--chocolate {
+            background-color: #632b17;
+        }
+
+        &--lettuce {
+            background-color: #178670;
+        }
+
+        &--lemon {
+            background-color: #f7ae3b;
+        }
+
+        &--turmeric {
+            background-color: #c3471b;
+        }
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1.2;
+        color: @white;
+
+        @media @bpMax1600 {
+            max-width: 130px;
+            margin: 0 auto 15px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 55px;
+
+        display: inline-block;
+
+        font-size: 2.1rem;
+        font-style: italic;
+        color: @white;
+
+
+        @media @bpMax1280 {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__btn {
+        margin: 0 auto;
+        width: 20.4rem;
+        height: 6rem;
+
+        border: solid 2px @white;
+        text-align: left;
+    }
+
+
+    &__btn::after {
+        background: url(../assets/images/Arrow-white.png) center no-repeat;
+    }
+
+}
