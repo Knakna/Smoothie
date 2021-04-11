@@ -1,1 +1,138 @@
 // main: ../main.less
+
+
+.testimonials {
+    padding: 115px 40px 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: @bgTestimonials;
+
+    @media @bpMax450 {
+        padding: 60px 40px 65px;
+    }
+
+    &__title {
+        margin-bottom: 130px;
+
+        text-align: center;
+
+        @media @bpMax1280 {
+            margin-bottom: 90px;
+        }
+
+        @media @bpMax660 {
+            margin-bottom: 60px;
+
+            line-height: 1.2;
+        }
+
+        &--orange {
+            color: #f2612d;
+
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 410px;
+                height: 301px;
+
+                top: -183px;
+                right: -745px;
+                z-index: 1;
+
+                background: url(../assets/images/Dots.png) no-repeat;
+
+                @media @bpMax1890 {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__content {
+        .flex();
+
+        max-width: 730px;
+        margin: 0 auto 110px;
+
+        z-index: 2;
+
+        @media @bpMax1040 {
+            flex-direction: column-reverse;
+        }
+
+        @media @bpMax450 {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__review {
+        padding: 55px 50px 0 0;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        position: relative;
+
+        @media @bpMax1040 {
+            padding: 35px 10px 0;
+        }
+
+        &::before {
+            content: url("../assets/images/SarahA.png");
+            position: absolute;
+            top: -40px;
+            right: -90px;
+            z-index: -1;
+
+            @media @bpMax1280 {
+                content: none;
+            }
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+        color: #f5f1f0;
+
+        @media @bpMax1280 {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__author {
+        display: inline-block;
+
+        font-weight: 600;
+        font-style: italic;
+        color: @brand;
+    }
+
+    &__img {
+        @media @bpMax1040 {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+
+    &__buttons {
+        margin: 0 auto;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        outline-color: @brandLighter;
+        cursor: pointer;
+        transition: background-color .2s linear;
+
+        &:first-child {
+            transform: rotate(180deg);
+            margin-right: 80px;
+        }
+    }
+}
