@@ -14,15 +14,15 @@
     background: @brand url('../assets/images/bg-header.jpg') center center/cover no-repeat;
     overflow: hidden;
 
-    @media @bpMax1600 {
+    @media (max-width: 1600px) {
         padding: 70px 0;
     }
 
-    @media @bpMax768 {
+    @media (max-width: 768px) {
         padding: 50px 0;
     }
 
-    @media @bpMax450 {
+    @media (max-width: 450px) {
         padding: 30px 0;
     }
 
@@ -34,11 +34,11 @@
 
         margin-bottom: 115px;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             padding: 0 40px;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             padding: 0 25px;
         }
     }
@@ -46,11 +46,11 @@
     &__nav {
         transition: transform .3s linear;
 
-        @media @bpMax1600 {
+        @media(max-width: 1600px) {
             width: 100%;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             display: block;
 
             position: fixed;
@@ -65,7 +65,7 @@
         }
 
         &.active {
-            @media @bpMax768 {
+            @media (max-width: 768px) {
                 transform: translateX(0%)
             }
         }
@@ -75,11 +75,11 @@
     &__list {
         .flex();
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             margin-bottom: 35px;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
@@ -95,12 +95,12 @@
     }
 
     &__item {
-        @media @bpMax768 {
-            margin-right: 0;
-        }
 
         &:not(:last-child) {
             margin-right: 35px;
+            @media (max-width: 768px) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -113,7 +113,7 @@
 
         transition: color .2s linear, border-bottom .2s linear;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             font-size: 2rem;
         }
 
@@ -130,15 +130,15 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             margin-top: 200px;
         }
 
-        @media @bpMax1280 {
+        @media (max-width: 1280px) {
             margin: 140px 0 0;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             margin-top: 310px;
         }
 
@@ -148,17 +148,17 @@
     &__icons {
         .flex();
 
-        @media @bpMax1600 {
+        @media (max-width: 1680px) {
             flex-direction: row-reverse;
 
             width: 100%;
         }
 
-        @media @bpMax1280 {
+        @media (max-width: 1280px) {
             padding: 25px 0 0;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             flex-direction: column;
             align-items: flex-end;
         }
@@ -168,7 +168,7 @@
     &__personal {
         position: relative;
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             margin-bottom: 35px;
 
             align-self: flex-end;
@@ -186,7 +186,7 @@
 
             background: @brandLighter;
 
-            @media @bpMax1600 {
+            @media (max-width: 1600px) {
                 display: none;
             }
         }
@@ -194,7 +194,7 @@
     }
 
     &__social {
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             margin-right: 15px;
 
             align-self: flex-end;
@@ -204,11 +204,11 @@
     &__content {
         align-self: center;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             margin-top: 50px;
         }
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             margin-top: 80px;
         }
     }
@@ -223,7 +223,7 @@
 
         border-radius: 35px;
 
-        @media @bpMax450 {
+        @media (max-width: 450px) {
             width: 24.5rem;
 
             padding: 1.8rem 3.5rem;

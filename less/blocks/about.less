@@ -4,11 +4,11 @@
     padding: 65px 0 95px;
     background-color: @bgAbout;
 
-    @media @bpMax768 {
+    @media (max-width: 768px) {
         padding: 65px 30px;
     }
 
-    @media @bpMax450 {
+    @media (max-width: 450px) {
         padding: 65px 0;
     }
 
@@ -16,7 +16,7 @@
         display: flex;
         justify-content: start;
 
-        @media @bpMax1400 {
+        @media (max-width: 1400px) {
             flex-direction: column-reverse;
             align-items: center;
         }
@@ -28,17 +28,17 @@
         position: relative;
         margin-right: 240px;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             margin-right: 125px;
         }
 
-        @media @bpMax1400 {
+        @media (max-width: 1400px) {
             margin: 0;
 
             height: 565px;
         }
 
-        @media @bpMax1040 {
+        @media (max-width: 1040px) {
             display: none;
         }
     }
@@ -51,12 +51,12 @@
 
         z-index: 1;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             left: 5px;
             bottom: -160px;
         }
 
-        @media @bpMax1400 {
+        @media (max-width: 1400px) {
             width: 85%;
             margin: 0;
             top: 60px;
@@ -68,11 +68,11 @@
 
         margin-left: 15px;
 
-        @media @bpMax1600 {
+        @media (max-width: 1600px) {
             margin-left: 0;
         }
 
-        @media @bpMax450 {
+        @media (max-width: 450px) {
             padding: 15px;
             margin-left: -10px;
         }
@@ -86,11 +86,11 @@
         font-size: 5.5rem;
         text-align: left;
 
-        @media @bpMax1280 {
+        @media (max-width: 1280px) {
             margin-bottom: 35px;
         }
 
-        @media @bpMax450 {
+        @media (max-width: 450px) {
             margin-bottom: 25px;
 
             text-align: center;
@@ -114,7 +114,7 @@
 
                 background: url(../assets/images/Line.png) no-repeat;
 
-                @media @bpMax768 {
+                @media (max-width: 768px) {
                     content: none;
                 }
             }
@@ -136,12 +136,12 @@
         text-align: left;
         color: @white;
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
             font-size: 3rem;
             background: url(../assets/images/3sec-list.png) no-repeat 0 20px;
         }
 
-        @media @bpMax450 {
+        @media (max-width: 450px) {
             font-size: 2.4rem;
         }
     }
@@ -157,19 +157,19 @@
         border-radius: @radius;
         border: solid 2px #f8b231;
 
-        @media @bpMax768 {
+        @media (max-width: 768px) {
 
             font-size: 2rem;
         }
 
-        @media @bpMax550 {
+        @media (max-width: 550px) {
             width: 100%;
             border-radius: 5rem;
             text-align: center;
         }
 
         &::after {
-            @media @bpMax550 {
+            @media (max-width: 550px) {
                 background-image: none;
             }
         }

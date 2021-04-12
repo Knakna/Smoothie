@@ -9,7 +9,7 @@
 
     background-color: @bgTestimonials;
 
-    @media @bpMax450 {
+    @media (max-width: 450px) {
         padding: 60px 40px 65px;
     }
 
@@ -18,11 +18,11 @@
 
         text-align: center;
 
-        @media @bpMax1280 {
+        @media (max-width: 1280px) {
             margin-bottom: 90px;
         }
 
-        @media @bpMax660 {
+        @media (max-width: 660px) {
             margin-bottom: 60px;
 
             line-height: 1.2;
@@ -36,7 +36,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                
+
                 width: 410px;
                 height: 301px;
 
@@ -46,7 +46,7 @@
 
                 background: url(../assets/images/Dots.png) no-repeat;
 
-                @media @bpMax1890 {
+                @media (max-width: 1890px) {
                     content: none;
                 }
             }
@@ -61,11 +61,11 @@
 
         z-index: 2;
 
-        @media @bpMax1040 {
+        @media (max-width: 1040px) {
             flex-direction: column-reverse;
         }
 
-        @media @bpMax450 {
+        @media (max-width: 450px) {
             margin-bottom: 50px;
         }
     }
@@ -79,7 +79,7 @@
 
         position: relative;
 
-        @media @bpMax1040 {
+        @media (max-width: 1040px) {
             padding: 35px 10px 0;
         }
 
@@ -90,7 +90,7 @@
             right: -90px;
             z-index: -1;
 
-            @media @bpMax1280 {
+            @media (max-width: 1280px) {
                 content: none;
             }
         }
@@ -100,7 +100,7 @@
         margin: 0 auto;
         color: #f5f1f0;
 
-        @media @bpMax1280 {
+        @media (max-width: 1280px) {
             padding-bottom: 15px;
         }
     }
@@ -114,7 +114,7 @@
     }
 
     &__img {
-        @media @bpMax1040 {
+        @media (max-width: 1040px) {
             max-width: 550px;
             margin: 0 auto;
         }
