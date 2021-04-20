@@ -55,6 +55,11 @@
 
     &__img {
         margin-bottom: 30px;
+       &:hover {
+        transform-style: preserve-3d;
+        transform: perspective(1000px) translateZ(100px);
+       }
+
     }
 
     &__subtitle {
