@@ -35,3 +35,7 @@ VanillaTilt.init(document.querySelector(".about__img"), {
 
 new WOW().init();
 
+
+
+
+
